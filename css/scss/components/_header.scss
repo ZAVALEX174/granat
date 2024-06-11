@@ -60,12 +60,19 @@
 
     .header__social {
       margin-right: 63px;
-      
+
+      .social__item {
+        .social__link {
+          svg {
+            color: #fad0d6;
+            // opacity: 0.6;
+          }
+        }
+      }
     }
 
     .header__contact {
       text-align: end;
-     
     }
   }
 }

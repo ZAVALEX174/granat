@@ -193,11 +193,15 @@ a {
 }
 .social__list .social__item {
   margin-right: 10px;
+  width: 23px;
+  height: 23px;
 }
 .social__list .social__item .social__link {
+  display: inline-block;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  cursor: pointer;
 }
 .social__list .social__item:last-child {
   margin-right: 0;
@@ -229,7 +233,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: -5px;
+  margin-top: -6px;
 }
 
 .logo {
@@ -286,6 +290,96 @@ a {
 .header__container .header__social {
   margin-right: 63px;
 }
+.header__container .header__social .social__item .social__link svg {
+  color: #fad0d6;
+}
 .header__container .header__contact {
   text-align: end;
+}
+
+.footert {
+  padding-top: 18px;
+  background: rgba(12, 17, 19, 0.9);
+}
+.footert .footert__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 44px;
+  align-items: flex-end;
+}
+.footert .footert__container .footer__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footert .footert__container .footer__left .footert__nav {
+  margin-bottom: 77px;
+}
+.footert .footert__container .footer__left .footer__left-down .copyright {
+  display: flex;
+  flex-direction: column;
+}
+.footert .footert__container .footer__left .footer__left-down .copyright p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: #394a5e;
+  font-family: Gilroy, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footert .footert__container .footer__left .footer__left-down .copyright p a {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  color: #394a5e;
+  font-family: Gilroy, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footert .footert__container .footer__left .footer__left-down .copyright address {
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-style: normal;
+  color: #394a5e;
+  font-family: Gilroy, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footert .footert__container .footer__right {
+  display: flex;
+  align-items: center;
+}
+.footert .footert__container .footer__right .footert__social {
+  margin-right: 43px;
+  align-self: center;
+}
+.footert .footert__container .footer__right .footert__social .social__item .social__link svg {
+  color: #3a4b5e;
+}
+.footert .footert__container .footer__right .footert__contact {
+  margin-right: 53px;
+  text-align: end;
+  align-self: center;
+}
+.footert .footert__container .footer__right .footert__contact .contact__order-call {
+  color: #de2a43;
+}
+.footert .footert__container .footer__right .logo__dev {
+  align-self: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

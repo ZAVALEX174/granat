@@ -1,0 +1,104 @@
+.footert {
+  padding-top: 18px;
+  background: rgba(12, 17, 19, 0.9);
+
+  .footert__container {
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 44px;
+    align-items: flex-end;
+
+    .footer__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .footert__nav {
+        margin-bottom: 77px;
+      }
+
+      .footer__left-down {
+        .copyright {
+          display: flex;
+          flex-direction: column;
+          p {
+            display: inline-block;
+            // display: block;
+            padding: 0;
+            margin: 0;
+            // display: inline-block;
+            color: #394a5e;
+            font-family: Gilroy, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            a {
+              padding: 0;
+              margin: 0;
+              display: inline-block;
+              color: #394a5e;
+              font-family: Gilroy, sans-serif;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+
+          address {
+            padding: 0;
+            margin: 0;
+            display: block;
+            font-style: normal;
+            color: #394a5e;
+            font-family: Gilroy, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .footer__right {
+      display: flex;
+      align-items: center;
+
+      .footert__social {
+        margin-right: 43px;
+        align-self: center;
+
+        .social__item {
+          .social__link {
+            svg {
+              color: #3a4b5e;
+              // opacity: 0.6;
+            }
+          }
+        }
+      }
+
+      .footert__contact {
+        margin-right: 53px;
+        text-align: end;
+        align-self: center;
+
+        .contact__tel {
+        }
+
+        .contact__order-call {
+          color: #de2a43;
+        }
+      }
+
+      .logo__dev {
+        align-self: center;
+      }
+    }
+  }
+}
