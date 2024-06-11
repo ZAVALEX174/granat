@@ -1,0 +1,23 @@
+.navigation {
+  .navigation__list {
+    display: flex;
+    // flex-wrap: wrap;
+
+    .navigation__item {
+      margin-right: 80px;
+
+      .navigation__link {
+        color: #fff;
+        font-family: Gilroy, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .navigation__item:last-child {
+      margin-right: 0;
+    }
+  }
+}

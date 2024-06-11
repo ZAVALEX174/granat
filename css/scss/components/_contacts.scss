@@ -1,0 +1,32 @@
+.contact {
+  .contact__tel {
+    display: block;
+    color: rgba(223, 44, 70, 0.3);
+    font-family: Anticva, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+
+    strong {
+      color: #cf162b;
+      font-family: Anticva, sans-serif;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .contact__order-call {
+    display: block;
+    color: #eed2d5;
+    font-family: $font-family-title;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: -5px;
+  }
+}
