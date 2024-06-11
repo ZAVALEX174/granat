@@ -183,6 +183,11 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: color 0.3s ease-in;
+}
+.navigation .navigation__list .navigation__item .navigation__link:hover {
+  color: #cf162b;
+  transition: color 0.3s ease-in;
 }
 .navigation .navigation__list .navigation__item:last-child {
   margin-right: 0;
