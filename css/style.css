@@ -1,3 +1,46 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.eot") format("eot"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueRegular.eot") format("eot"), url("../fonts/BebasNeue/BebasNeueRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/gilroy/Gilroy-Regular.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/Gilroy-Medium.woff") format("woff"), url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/gilroy/Gilroy-Light.woff") format("woff"), url("../fonts/gilroy/Gilroy-Light.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anticva";
+  src: local("Anticva Regular"), local("Anticva-Regular"), url("../fonts/anticva/Anticva-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 html,
 body {
   min-height: 100vh;
@@ -5,7 +48,7 @@ body {
 }
 
 body {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Anticva", sans-serif;
   color: #000000;
   font-weight: 400;
   font-style: normal;
@@ -41,7 +84,7 @@ h6,
 
 h1,
 .h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Anticva", sans-serif;
   font-weight: 700;
   font-size: 50px;
   line-height: 0.44;
@@ -108,11 +151,11 @@ a:hover, a:active {
 }
 
 .container {
+  margin: 0 auto;
   width: 100%;
   max-width: 1520px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 0 auto;
 }
 @media screen and (max-width: 500px) {
   .container {
@@ -178,7 +221,7 @@ a {
 }
 .navigation .navigation__list .navigation__item .navigation__link {
   color: #fff;
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -215,7 +258,7 @@ a {
 .contact .contact__tel {
   display: block;
   color: rgba(223, 44, 70, 0.3);
-  font-family: Anticva, sans-serif;
+  font-family: "Anticva", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -224,7 +267,7 @@ a {
 }
 .contact .contact__tel strong {
   color: #cf162b;
-  font-family: Anticva, sans-serif;
+  font-family: "Anticva", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -260,7 +303,8 @@ a {
   margin: 0;
   display: block;
   color: #f60030;
-  font-family: Anticva, sans-serif;
+  font-family: "Anticva", sans-serif;
+  text-transform: uppercase;
   font-size: 33px;
   font-style: normal;
   font-weight: 400;
@@ -279,6 +323,14 @@ a {
   text-transform: uppercase;
 }
 
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #020a11 0%, rgba(5, 12, 19, 0) 100%);
+  height: 546px;
+}
 .header__container {
   align-items: center;
   padding: 26px;
@@ -330,7 +382,7 @@ a {
   padding: 0;
   margin: 0;
   color: #394a5e;
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -341,7 +393,7 @@ a {
   margin: 0;
   display: inline-block;
   color: #394a5e;
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -353,7 +405,7 @@ a {
   display: block;
   font-style: normal;
   color: #394a5e;
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

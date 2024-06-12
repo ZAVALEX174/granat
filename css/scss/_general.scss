@@ -138,11 +138,12 @@ a {
 }
 
 .container {
+  margin: 0 auto;
   width: 100%;
   max-width: 1520px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 0 auto;
+
   //border: 1px solid red;
 
   @media #{$phone} {

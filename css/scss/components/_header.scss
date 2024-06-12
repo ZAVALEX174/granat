@@ -20,7 +20,8 @@
       margin: 0;
       display: block;
       color: #f60030;
-      font-family: Anticva, sans-serif;
+      font-family: $font-family-base;
+      text-transform: uppercase;
       font-size: 33px;
       font-style: normal;
       font-weight: 400;
@@ -43,6 +44,13 @@
 }
 
 .header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #020a11 0%, rgba(5, 12, 19, 0) 100%);
+  height: 546px;
+
   &__container {
     align-items: center;
     padding: 26px;
