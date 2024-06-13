@@ -13,6 +13,13 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
+          <div class="header__burger">
+            <div class="header__burger_open">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line short-line"></span>
+            </div>
+          </div>
           <a class="logo logo__link" href="/">
             <div class="logo__img logo__header">
               <img
@@ -43,7 +50,7 @@
           <div class="social header__social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="btn social__link social__link01">
+                <a href="#" class="social__link social__link01">
                   <svg
                     width="23"
                     height="23"
@@ -61,7 +68,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="btn social__link social__link02">
+                <a href="#" class="social__link social__link02">
                   <svg
                     width="23"
                     height="25"
@@ -82,7 +89,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="btn social__link social__link03">
+                <a href="#" class="social__link social__link03">
                   <svg
                     width="23"
                     height="23"
@@ -100,7 +107,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="btn social__link social__link04">
+                <a href="#" class="social__link social__link04">
                   <svg
                     width="23"
                     height="23"
@@ -137,6 +144,21 @@
             </a>
             <a href="" class="contact__order-call">заказать звонок</a>
           </div>
+
+          <div class="contact header__contact_mob">
+            <a href="tel:+72465050" class="contact__tel_mob">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 12.46L12.73 11.85L10.21 14.37C7.37121 12.9262 5.0638 10.6188 3.62002 7.78L6.15002 5.25L5.54002 0H0.0300246C-0.549975 10.18 7.82002 18.55 18 17.97V12.46Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -145,38 +167,177 @@
       <section class="hero">
         <!-- <div class="container"> -->
         <div class="hero__container">
-          <div class="slider">
-            <div
-              class="swiper-slide"
-              style="
-                background: url(images/hero/01.png) no-repeat top left/contain;
-                height: 1351px;
-              ">
-              <div class="hero-slider__container">
-                <div class="container">
-                  <div class="hero-slider__card">
-                    <h2>
-                      <!-- Периодическая проверка -->
-                    </h2>
-                    <p>
-                      <!-- С опытными преподавателями и эффективными методиками вы
-                      станете настоящим профессионалом в охранной деятельности.
-                      Индивидуальный подход к каждому -->
+          <div class="swiper hero__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper hero__swiper-wrapper">
+              <!-- Slides -->
+              <div
+                class="swiper-slide hero__swiper-slide"
+                style="
+                  background: url(../../../images/hero/01.png) no-repeat top
+                    left/cover;
+                  height: 1007px;
+                ">
+                <div class="hero__swiper-slide-container">
+                  Гранат
+                  <div class="content-box">
+                    <h2>Гранат</h2>
+                    <p class="title">«Таунхаусы премиум -класса»</p>
+                    <p class="subtitle">
+                      Дома с видом на море, собственная парковка, бассейн и
+                      spa-центр – это лишь малая часть того, что ждет будущих
+                      жильцов.
                     </p>
-                    <a href="#" class="btn btn-arr">
-                      <!-- подробнее  -->
-                    </a>
+                    <a href="#" class="btn">подробнее</a>
                   </div>
                 </div>
               </div>
-              <!-- </div> -->
+              <div
+                class="swiper-slide hero__swiper-slide"
+                style="
+                  background: url(../../../images/hero/02.png) no-repeat top
+                    left/cover;
+                  height: 1007px;
+                ">
+                <div class="hero__swiper-slide-container">
+                  Гранат
+                  <div class="content-box">
+                    <h2>Гранат2</h2>
+                    <p class="title">«Таунхаусы премиум -класса»</p>
+                    <p class="subtitle">
+                      Дома с видом на море, собственная парковка, бассейн и
+                      spa-центр – это лишь малая часть того, что ждет будущих
+                      жильцов.
+                    </p>
+                    <a href="#" class="btn">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide hero__swiper-slide"
+                style="
+                  background: url(../../../images/hero/03.png) no-repeat top
+                    left/cover;
+                  height: 1007px;
+                ">
+                <div class="hero__swiper-slide-container">
+                  Гранат
+                  <div class="content-box">
+                    <h2>Гранат3</h2>
+                    <p class="title">«Таунхаусы премиум -класса»</p>
+                    <p class="subtitle">
+                      Дома с видом на море, собственная парковка, бассейн и
+                      spa-центр – это лишь малая часть того, что ждет будущих
+                      жильцов.
+                    </p>
+                    <a href="#" class="btn">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide hero__swiper-slide"
+                style="
+                  background: url(../../../images/hero/04.png) no-repeat top
+                    left/cover;
+                  height: 1007px;
+                ">
+                <div class="hero__swiper-slide-container">
+                  Гранат
+                  <div class="content-box">
+                    <h2>Гранат4</h2>
+                    <p class="title">«Таунхаусы премиум -класса»</p>
+                    <p class="subtitle">
+                      Дома с видом на море, собственная парковка, бассейн и
+                      spa-центр – это лишь малая часть того, что ждет будущих
+                      жильцов.
+                    </p>
+                    <a href="#" class="btn">подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination hero__swiper-pagination"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar hero__swiper-scrollbar"></div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="consultation none">
+        <div class="container">
+          <div class="consultation__container">
+            <!--                <div class="consultation__bg"></div>-->
+            <div class="consultation__form-wrapper">
+              <div class="consultation__form-content">
+                <form action="/" method="POST">
+                  <label for="username"
+                    >Заказать обратный звонок
+                    <span
+                      >Узнайте больше о проекте или запишитесь на
+                      экскурсии</span
+                    >
+                    <span>Оставьте свой номер, и мы вам перезвоним</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    name="username"
+                    id="username"
+                    autocomplete
+                    required />
+                  <input
+                    type="text"
+                    placeholder="Телефон"
+                    autocomplete
+                    required
+                    class="phone" />
+                  <div class="wrapper__link">
+                    <a href="#" class="link-warning"
+                      >нажимая кнопку «заказать», вы принимаете условия передачи
+                      указанной информации</a
+                    >
+                    <a class="btn btn__consultation"> Заказать </a>
+                  </div>
+                </form>
+              </div>
+              <div class="consultation__form-foto">
+                <div class="foto__title">
+                  г. <span>Абхазия</span>, мкрн. <span>Старая Га́гра</span>
+                </div>
+                <div class="foto__map">
+                  <img
+                    src="../images/consultation/map.svg"
+                    alt="Картинка карты микрорайона"
+                    srcset="" />
+                  <div class="logo__map">
+                    <div class="logo__map-box">
+                      <a class="logo logo__link" href="/">
+                        <div class="logo__img">
+                          <img
+                            src="./images/header/logo.svg"
+                            alt="Логотип компании в виде Граната" />
+                        </div>
+                        <div class="rectangle"></div>
+                        <div class="logo__header_title">
+                          <span class="title">Granat</span>
+                          <span class="subtitle"
+                            >Таунхаусы премиум - класса</span
+                          >
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footert">
+    <footer class="footert none">
       <div class="container">
         <div class="footert__container">
           <div class="footer__left">
@@ -215,7 +376,7 @@
             <div class="social footert__social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="#" class="btn social__link social__link01">
+                  <a href="#" class="social__link social__link01">
                     <svg
                       width="23"
                       height="23"
@@ -233,7 +394,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="btn social__link social__link02">
+                  <a href="#" class="social__link social__link02">
                     <svg
                       width="23"
                       height="25"
@@ -254,7 +415,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="btn social__link social__link03">
+                  <a href="#" class="social__link social__link03">
                     <svg
                       width="23"
                       height="23"
@@ -272,7 +433,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="btn social__link social__link04">
+                  <a href="#" class="social__link social__link04">
                     <svg
                       width="23"
                       height="23"
@@ -324,10 +485,10 @@
     <script src="script/fancybox/fancybox.umd.js" defer></script>
     <!-- <script src="script/burger.js" defer></script> -->
     <script src="script/swiper-bundle.js" defer></script>
-    <!-- <script src="script/hero-slider.js" defer></script> -->
+    <script src="script/hero-swiper.js" defer></script>
     <!-- <script src="script/services-slider.js" defer></script> -->
     <!-- <script src="script/open-submenu.js" defer></script> -->
-    <script src="script/button-go-up.js" defer></script>
+    <!--    <script src="script/button-go-up.js" defer></script>-->
     <script src="script/jquery.inputmask.min.js" defer></script>
     <script src="script/index.js" defer></script>
   </body>

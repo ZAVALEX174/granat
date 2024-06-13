@@ -7,19 +7,22 @@
   line-height: 50px;
   text-decoration: none;
   border: none;
-  border-radius: 9px;
-  padding: 0 20px 0 56px;
-  font-weight: 700;
-  font-size: 20px;
+  border-radius: 18px;
+  padding: 0 20px 0 28px;
+  font-weight: 400;
+  font-size: 16px;
   text-transform: uppercase;
   display: inline-block;
-  background: linear-gradient(319deg, #285681 0%, #0f3354 100%);
+  //background: linear-gradient(319deg, $color-granat-title 0%, $color-granat-subtitle 100%);
+  background: linear-gradient(319deg, rgba(144, 33, 48, 1) 0%, #2D050A 100%);
   position: relative;
   transition: 0.3s all linear;
-  color: #34c3ff;
+  color: #FFF;
   cursor: pointer;
   white-space: nowrap;
   outline: none;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.90);
+  font-style: normal;
 
   @media #{$notebook} {
     padding: 0 15px;
@@ -45,13 +48,15 @@
 
   &:hover {
     //color: #ffffff;
-    background: linear-gradient(62deg, #285681 0%, #0f3354 100%);
+    //background: linear-gradient(62deg, #285681 0%, #0f3354 100%);
+    background: linear-gradient(62deg, rgba(144, 33, 48, 1) 0%, #2D050A 100%);
     transition: 0.3s linear;
   }
 
   &:active {
-    color: #34c3ff;
-    background: linear-gradient(62deg, #285681 0%, #0f3354 100%);
+    color: $color-granat-subtitle;
+    //background: linear-gradient(62deg, #285681 0%, #0f3354 100%);
+    background: linear-gradient(62deg, rgba(144, 33, 48, 1) 0%, #2D050A 100%);
     box-shadow: 0 4px 25px 0 rgba(14, 50, 84, 0.44);
   }
 
@@ -312,7 +317,7 @@
   content: '';
   width: 14px;
   height: 14px;
-  background-image: url('../images/arr-right-defolt.svg');
+  //background-image: url('../images/arr-right-defolt.svg');
   background-repeat: no-repeat;
   background-position: center;
   position: relative;

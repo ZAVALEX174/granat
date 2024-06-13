@@ -2,6 +2,7 @@
 @import 'fonts/bebasneue';
 @import 'fonts/gilroy';
 @import 'fonts/anticva';
+//@import 'variables';
 @import 'general';
 
 @import 'components/menu';
@@ -15,7 +16,9 @@
 
 @import 'components/hero';
 
-// @import 'components/servises';
+@import 'components/consultation';
+
+ @import 'components/btn';
 // @import 'components/services-page';
 
 // @import 'components/service-page';
