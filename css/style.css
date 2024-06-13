@@ -647,6 +647,8 @@ main {
   padding-left: 20px;
   margin: 0 auto;
   margin-top: 200px;
+}
+.hero .hero__container .hero__swiper .hero__swiper-wrapper .hero__swiper-slide .hero__swiper-slide-container h2 {
   color: rgba(255, 255, 255, 0.1);
   text-align: center;
   font-family: "Anticva";
@@ -665,7 +667,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.hero .hero__container .hero__swiper .hero__swiper-wrapper .hero__swiper-slide .hero__swiper-slide-container .content-box h2 {
+.hero .hero__container .hero__swiper .hero__swiper-wrapper .hero__swiper-slide .hero__swiper-slide-container .content-box h3 {
   margin: 0;
   padding: 0;
   color: #fff;
@@ -676,6 +678,7 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 0.8;
+  text-transform: uppercase;
 }
 .hero .hero__container .hero__swiper .hero__swiper-wrapper .hero__swiper-slide .hero__swiper-slide-container .content-box .title {
   margin: 0;
