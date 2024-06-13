@@ -758,7 +758,7 @@ main {
   left: -33px;
 }
 .consultation {
-  background-image: url("../images/consultation/bg.png");
+  background-image: url("./images/consultation/bg.png");
   padding-top: 40px;
   height: 710px;
 }
@@ -794,7 +794,7 @@ main {
   margin-bottom: 40px;
 }
 .consultation .consultation__container .consultation__form-wrapper .consultation__form-content form input {
-  color: #FFF;
+  color: #fff;
   background: transparent;
   display: inline-flex;
   outline: none;
@@ -838,7 +838,7 @@ main {
 }
 .consultation .consultation__container .consultation__form-wrapper .consultation__form-foto .foto__title {
   padding-left: 48px;
-  color: #FFF;
+  color: #fff;
   font-family: "Anticva";
   font-size: 15px;
   font-style: normal;
@@ -847,7 +847,7 @@ main {
   margin-bottom: 11px;
 }
 .consultation .consultation__container .consultation__form-wrapper .consultation__form-foto .foto__title span {
-  color: #FFF;
+  color: #fff;
   font-size: 25px;
 }
 .consultation .consultation__container .consultation__form-wrapper .consultation__form-foto .foto__map {
