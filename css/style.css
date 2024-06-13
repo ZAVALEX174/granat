@@ -705,19 +705,35 @@ main {
   color: #fff;
   padding: 0 74px;
 }
-.hero .hero__container .hero__swiper .hero__swiper-pagination {
+.hero .hero__container .hero__swiper .hero__pagination-box {
+  position: relative;
+  z-index: 200;
+  max-width: 1520px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 25px;
+  margin: 0 auto;
+  top: -70px;
+  right: 0;
+}
+.hero .hero__container .hero__swiper .hero__pagination-box .swiper-pagination-horizontal {
+  width: 370px;
+  left: auto;
+  right: 0;
+}
+.hero .hero__container .hero__swiper .hero__pagination-box .hero__swiper-pagination {
   width: 370px;
   height: var(--swiper-pagination-progressbar-size, 4px);
-  left: 84%;
-  top: 97%;
+  right: 44px;
+  top: 9px;
   border-radius: 10px;
   background: rgba(229, 238, 245, 0.5);
 }
-.hero .hero__container .hero__swiper .hero__swiper-pagination .swiper-pagination-progressbar-fill {
+.hero .hero__container .hero__swiper .hero__pagination-box .hero__swiper-pagination .swiper-pagination-progressbar-fill {
   border-radius: 10px;
   background: #df2c46;
 }
-.hero .hero__container .hero__swiper .hero__swiper-pagination::after {
+.hero .hero__container .hero__swiper .hero__pagination-box .hero__swiper-pagination::after {
   position: absolute;
   content: "04";
   color: #f2f6fa;
@@ -729,7 +745,7 @@ main {
   top: -10px;
   right: -33px;
 }
-.hero .hero__container .hero__swiper .hero__swiper-pagination::before {
+.hero .hero__container .hero__swiper .hero__pagination-box .hero__swiper-pagination::before {
   position: absolute;
   content: "01";
   color: #f2f6fa;
