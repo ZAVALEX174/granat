@@ -648,6 +648,95 @@ main {
   position: relative;
 }
 
+.burger-menu {
+  position: fixed;
+  top: 90px;
+  width: 100%;
+  height: 100%;
+  z-index: 350;
+  overflow-x: hidden;
+  left: -100%;
+  transition: 0.6s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.burger-menu .burger-menu__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 38px 29px 22px 29px;
+  border-radius: 34px;
+  background: linear-gradient(180deg, rgba(18, 22, 30, 0) 53.1%, rgba(10, 11, 14, 0.8) 100%) rgb(10, 11, 14);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+}
+.burger-menu .burger-menu__container .burger__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 324px;
+}
+.burger-menu .burger-menu__container .burger__nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.burger-menu .burger-menu__container .burger__nav ul li {
+  color: #FFF;
+  font-family: "Gilroy", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.burger-menu .burger-menu__container .burger__nav ul li:not(:last-child) {
+  margin-bottom: 25px;
+}
+.burger-menu .burger-menu__container .burger__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.burger-menu .burger-menu__container .burger__contact a {
+  color: rgba(223, 44, 70, 0.3);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.burger-menu .burger-menu__container .burger__contact a strong {
+  color: #CF162B;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.burger-menu .burger-menu__container .burger__social {
+  display: flex;
+  justify-content: center;
+}
+.burger-menu .burger-menu__container .burger__social ul li a svg {
+  color: #E9E9E9;
+}
+.burger-menu .burger-menu__container .btn__burger-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 23px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.burger-menu .burger-menu__container .btn__burger-close svg {
+  background-color: transparent;
+  color: #3A4059;
+}
+
+.burger-menu .animate {
+  left: 500px;
+}
+
 .hero {
   width: 100%;
   height: 1007px;
