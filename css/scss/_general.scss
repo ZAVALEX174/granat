@@ -127,12 +127,12 @@ a {
   &:link,
   &:visited {
     text-decoration: none;
-    color: $color-main;
+    //color: $color-main;
   }
 
   &:hover,
   &:active {
-    color: #fff;
+    //color: #fff;
     text-decoration: none;
   }
 }
