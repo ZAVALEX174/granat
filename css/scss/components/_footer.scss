@@ -4,6 +4,10 @@
   padding-top: 18px;
   background: rgba(12, 17, 19, 0.9);
 
+  @media #{$tablet} {
+    margin-top: -136px;
+  }
+
   .footert__container {
     display: flex;
     // flex-direction: row;
@@ -19,6 +23,10 @@
 
       .footert__nav {
         margin-bottom: 77px;
+
+        @media #{$tablet} {
+          display: none;
+        }
       }
 
       .footer__left-down {
@@ -75,6 +83,11 @@
       .footert__social {
         margin-right: 43px;
         align-self: center;
+        margin-top: -14px;
+
+        @media #{$notebook_s} {
+          margin-right: 30px;
+        }
 
         .social__item {
           .social__link {

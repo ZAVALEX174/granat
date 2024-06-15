@@ -1,13 +1,21 @@
 .navigation {
+  //display: flex;
+  //justify-content: space-between;
+
   .navigation__list {
     display: flex;
     // flex-wrap: wrap;
+    //justify-content: space-between;
 
     .navigation__item {
       margin-right: 80px;
 
-      @media #{$laptop} {
+      @media #{$desktop} {
         margin-right: 60px;
+      }
+
+      @media #{$laptop} {
+        margin-right: 50px;
       }
 
       @media #{$notebook} {
@@ -15,7 +23,7 @@
       }
 
       @media #{$notebook_s} {
-        margin-right: 25px;
+        margin-right: 20px;
         font-size: 13px;
       }
 
