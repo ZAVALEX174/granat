@@ -994,13 +994,16 @@ main {
   left: -33px;
 }
 
+.about-project h2 {
+  margin-bottom: 40px;
+}
 .about-project .about-project__container {
   background: url("../images/about-project/01.png") no-repeat top right/contain;
   display: flex;
   flex-direction: column;
-}
-.about-project .about-project__container h2 {
-  margin-bottom: 40px;
+  margin-top: -60px;
+  padding-top: 44px;
+  padding-bottom: 111px;
 }
 .about-project .about-project__container .about-project__wrapper {
   display: flex;
@@ -1018,16 +1021,16 @@ main {
 .about-project .about-project__container .about-project__wrapper .about-project__description p {
   padding: 0;
   margin: 0;
-  color: #2C3E46;
+  color: #2c3e46;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .about-project .about-project__container .about-project__wrapper .about-project__description p:nth-child(1) strong {
-  color: #2C3E46;
+  color: #2c3e46;
   font-family: "Anticva", sans-serif;
   font-size: 30px;
   font-style: normal;
@@ -1035,7 +1038,7 @@ main {
   line-height: 22px; /* 73.333% */
 }
 .about-project .about-project__container .about-project__wrapper .about-project__description p:nth-child(2) strong {
-  color: #2C3E46;
+  color: #2c3e46;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1043,7 +1046,7 @@ main {
   line-height: 22px;
 }
 .about-project .about-project__container .about-project__wrapper .about-project__description .ul p strong {
-  color: #2C3E46;
+  color: #2c3e46;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1063,7 +1066,7 @@ main {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #2C3E46;
+  background-color: #2c3e46;
 }
 @media screen and (max-width: 500px) {
   .about-project .about-project__container .about-project__wrapper .about-project__description .ul p:not(p:nth-child(1))::before {
@@ -1072,8 +1075,18 @@ main {
   }
 }
 .about-project .about-project__container .about-project__wrapper .about-project__description .about-project__btn {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
   bottom: -36px;
   left: 120px;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 36px;
+  padding-left: 36px;
 }
 .consultation {
   background-image: url("../images/consultation/bg.png");
@@ -1301,6 +1314,4 @@ main {
   color: #904852;
   background: linear-gradient(62deg, rgb(144, 33, 48) 0%, #2D050A 100%);
   box-shadow: 0 4px 25px 0 rgba(14, 50, 84, 0.44);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
