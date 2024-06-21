@@ -14,7 +14,7 @@
   }
 
   .fancybox__backdrop {
-    background: rgba(225, 225, 225, 0.65) !important;
+    background: rgba(0, 0, 0, 0.65) !important;
   }
 
 .is-close-btn {
@@ -159,36 +159,36 @@
   }
 }
 
-.modal-image {
-  max-width: 500px;
-  height: auto;
+// .modal-image {
+//   max-width: 500px;
+//   height: auto;
 
-  .modal__container_image {
-    width: 100%;
-    height: 100%;
+//   .modal__container_image {
+//     width: 100%;
+//     height: 100%;
 
-    .licenses__gallery_item{
-      position: relative;
+//     .licenses__gallery_item{
+//       position: relative;
 
-      p {
-        color: #fff;
-      }
+//       p {
+//         color: #fff;
+//       }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//       }
+//     }
 
-    .licenses__gallery_item::before {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0.5;
-    }
-  }
-}
+//     .licenses__gallery_item::before {
+//       position: absolute;
+//       content: '';
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       opacity: 0.5;
+//     }
+//   }
+// }
