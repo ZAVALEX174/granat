@@ -16,16 +16,16 @@ function trackScroll() {
         // кнопка появляется
         goUpBtn.classList.add("button-go-up__show");
     } else {
-    // иначе исчезает
-    goUpBtn.classList.remove("button-go-up__show");
+        // иначе исчезает
+        goUpBtn.classList.remove("button-go-up__show");
     }
 }
 
 function goUp() {
     // пока не вернулись в начало страницы
-    if (window.scrollY  > 0) {
+    if (window.scrollY > 0) {
         // скроллим наверх
-        window.scrollBy(0, -20); // второй аргумент - скорость
+        window.scrollBy(0, -40); // второй аргумент - скорость
         setTimeout(goUp, 0); // входим в рекурсию
     }
 }

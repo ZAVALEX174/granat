@@ -1,5 +1,4 @@
 .layouts {
-
   h2 {
     color: $color-granat-title;
     font-family: $font-family-base;
@@ -10,7 +9,6 @@
     position: relative;
     z-index: 10;
     //scroll-margin-top: 540px;
-
 
     scroll-padding-top: 130px;
   }
@@ -24,7 +22,6 @@
     padding-left: 10px;
     margin-top: -70px;
 
-
     .mySwiper2 {
       //margin-right: -100px;
       position: relative;
@@ -35,7 +32,6 @@
       height: 65%;
 
       .layouts__swiper-wrapper2 {
-
         .layouts__swiper-slide2 {
           display: flex;
           align-items: flex-end;
@@ -62,7 +58,7 @@
           .dt2::before {
             position: absolute;
             content: attr(data-title);
-            color: rgba(227, 232, 235, 0.50);
+            color: rgba(227, 232, 235, 0.5);
             font-family: $font-family-base;
             font-size: 150px;
             font-style: normal;
@@ -81,9 +77,8 @@
             padding: 40px;
 
             .title {
-
               h3 {
-                color: #455A64;
+                color: #455a64;
                 font-family: $font-family-base;
                 font-size: 35px;
                 font-style: normal;
@@ -93,7 +88,7 @@
               }
 
               p {
-                color: #455A64;
+                color: #455a64;
                 font-family: $font-family-title;
                 font-size: 20px;
                 font-style: normal;
@@ -107,7 +102,7 @@
               margin-bottom: 40px;
 
               p {
-                color: #75838A;
+                color: #75838a;
                 font-family: $font-family-title;
                 font-size: 14px;
                 font-style: normal;
@@ -120,8 +115,8 @@
               margin-bottom: 35px;
 
               .btn__layouts__swiper-slide {
-                color: #FFF;
-                text-shadow: 0 0 15px rgba(0, 0, 0, 0.90);
+                color: #fff;
+                text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
                 font-family: $font-family-base;
                 font-size: 16px;
                 font-style: normal;
@@ -144,7 +139,7 @@
           .desc::before {
             position: absolute;
             content: '';
-            background-color: rgba(204, 214, 219, 0.30);
+            background-color: rgba(204, 214, 219, 0.3);
             top: 40px;
             left: -24px;
             right: 24px;
@@ -164,7 +159,7 @@
         border-radius: 48px;
         z-index: 50;
 
-        .swiper-button-prev::after{
+        .swiper-button-prev::after {
           display: none;
         }
 
@@ -199,10 +194,10 @@
           height: 12px;
           top: 27px;
           left: 20px;
-          background: url("../images/arr/arr_left_def.svg") no-repeat;
+          background: url('../images/arr/arr_left_def.svg') no-repeat;
         }
 
-        .swiper-button-next::after{
+        .swiper-button-next::after {
           display: none;
         }
 
@@ -238,7 +233,7 @@
           height: 12px;
           top: 27px;
           left: 31px;
-          background: url("../images/arr/arr_right_red.svg") no-repeat;
+          background: url('../images/arr/arr_right_red.svg') no-repeat;
         }
       }
     }
@@ -269,7 +264,7 @@
           justify-content: center;
           padding-left: 100px;
           max-width: 450px;
-
+          filter: grayscale(100%); //для проверки
 
           img {
             //width: 100%;
@@ -278,10 +273,15 @@
           }
         }
 
+        .swiper-slide-thumb-active {
+          // opacity: 1;
+          filter: grayscale(0);
+        }
+
         .dt::before {
           position: absolute;
           content: attr(data-title);
-          color: rgba(227, 232, 235, 0.50);
+          color: rgba(227, 232, 235, 0.5);
           font-family: $font-family-base;
           font-size: 70px;
           font-style: normal;
@@ -294,7 +294,6 @@
         .dt:not(:nth-child(1))::before {
           left: 40px;
         }
-
       }
 
       .swiper-button-next {
@@ -330,7 +329,7 @@
         display: inline-flex;
         width: 12px;
         height: 12px;
-        background: url("../images/arr/arr_right_red.svg") no-repeat ;
+        background: url('../images/arr/arr_right_red.svg') no-repeat;
       }
 
       .swiper-button-prev::after {
@@ -343,7 +342,7 @@
         display: inline-flex;
         width: 12px;
         height: 12px;
-        background: url("../images/arr/arr_left_def.svg") no-repeat ;
+        background: url('../images/arr/arr_left_def.svg') no-repeat;
       }
 
       .mySwiper2__pagination-box {
@@ -383,7 +382,7 @@
           right: auto;
           top: 9px;
           border-radius: 10px;
-          background: #E5EEF5;
+          background: #e5eef5;
 
           @media #{$phone} {
             width: 290px;
@@ -398,7 +397,7 @@
         .mySwiper2__swiper-pagination::after {
           position: absolute;
           content: '04';
-          color: #B8C5D4;
+          color: #b8c5d4;
           font-family: $font-family-base;
           font-size: 20px;
           font-style: normal;
@@ -411,7 +410,7 @@
         .mySwiper2__swiper-pagination::before {
           position: absolute;
           content: '01';
-          color: #B8C5D4;
+          color: #b8c5d4;
           font-family: $font-family-base;
           font-size: 20px;
           font-style: normal;
@@ -430,11 +429,10 @@
       content: '';
       width: 1111px;
       height: 277px;
-      background-color: rgba(204, 214, 219, 0.30);
+      background-color: rgba(204, 214, 219, 0.3);
       top: 34px;
       left: -21px;
       z-index: 1;
     }
   }
 }
-

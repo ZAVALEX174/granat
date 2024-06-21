@@ -1864,7 +1864,7 @@ main {
   padding: 40px;
 }
 .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .desc .title h3 {
-  color: #455A64;
+  color: #455a64;
   font-family: "Anticva", sans-serif;
   font-size: 35px;
   font-style: normal;
@@ -1873,7 +1873,7 @@ main {
   margin-bottom: 10px;
 }
 .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .desc .title p {
-  color: #455A64;
+  color: #455a64;
   font-family: "Gilroy", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -1885,7 +1885,7 @@ main {
   margin-bottom: 40px;
 }
 .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .desc .text p {
-  color: #75838A;
+  color: #75838a;
   font-family: "Gilroy", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1896,7 +1896,7 @@ main {
   margin-bottom: 35px;
 }
 .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .desc .button .btn__layouts__swiper-slide {
-  color: #FFF;
+  color: #fff;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
   font-family: "Anticva", sans-serif;
   font-size: 16px;
@@ -2022,6 +2022,10 @@ main {
   justify-content: center;
   padding-left: 100px;
   max-width: 450px;
+  filter: grayscale(100%);
+}
+.layouts .layouts-swipers-box .mySwiper .swiper-wrapper02 .swiper-slide-thumb-active {
+  filter: grayscale(0);
 }
 .layouts .layouts-swipers-box .mySwiper .swiper-wrapper02 .dt::before {
   position: absolute;
@@ -2116,7 +2120,7 @@ main {
   right: auto;
   top: 9px;
   border-radius: 10px;
-  background: #E5EEF5;
+  background: #e5eef5;
 }
 @media screen and (max-width: 500px) {
   .layouts .layouts-swipers-box .mySwiper .mySwiper2__pagination-box .mySwiper2__swiper-pagination {
@@ -2130,7 +2134,7 @@ main {
 .layouts .layouts-swipers-box .mySwiper .mySwiper2__pagination-box .mySwiper2__swiper-pagination::after {
   position: absolute;
   content: "04";
-  color: #B8C5D4;
+  color: #b8c5d4;
   font-family: "Anticva", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -2142,7 +2146,7 @@ main {
 .layouts .layouts-swipers-box .mySwiper .mySwiper2__pagination-box .mySwiper2__swiper-pagination::before {
   position: absolute;
   content: "01";
-  color: #B8C5D4;
+  color: #b8c5d4;
   font-family: "Anticva", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -2559,6 +2563,4 @@ main {
   right: 0;
   bottom: 0;
   opacity: 0.5;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
