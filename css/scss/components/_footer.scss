@@ -1,4 +1,4 @@
-.footert {
+.footer {
   position: relative;
   margin-top: -205px;
   padding-top: 18px;
@@ -8,7 +8,7 @@
     margin-top: -136px;
   }
 
-  .footert__container {
+  .footer__container {
     display: flex;
     // flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,7 @@
       flex-direction: column;
       justify-content: space-between;
 
-      .footert__nav {
+      .footer__nav {
         margin-bottom: 77px;
 
         @media #{$tablet} {
@@ -80,7 +80,7 @@
       display: flex;
       align-items: center;
 
-      .footert__social {
+      .footer__social {
         margin-right: 43px;
         align-self: center;
         margin-top: -14px;
@@ -99,7 +99,7 @@
         }
       }
 
-      .footert__contact {
+      .footer__contact {
         margin-right: 53px;
         text-align: end;
         align-self: center;

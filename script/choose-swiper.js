@@ -1,10 +1,13 @@
 const chooseSlider = new Swiper('.choose__swiper', {
     loop: true,
-    speed: 1500,
+        speed: 1500,
+        spaceBetween: 10,
     // effect: "fade", //вряд ли, тк не будет видно второго слайда
-    slidesPerView: 1.2,
-    // spaceBetween: 500,
-    centeredSlides: true,
+        slidesPerView: 1.25,
+        autoHeight: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+
     pagination: {
         el: '.choose__swiper-pagination',
         // dynamicBullets: true,
@@ -16,26 +19,20 @@ const chooseSlider = new Swiper('.choose__swiper', {
         prevEl: '.swiper-button-prev',
     },
         effect: "creative",
-        loopedSlides: 2,
+        loopedSlides:2,
         creativeEffect: {
             limitProgress: 2,
             prev: {
-                translate: ["-100%", 0, 0],
-                opacity: 0.3,
-                scale: .75
+                translate: ["-100vw", 0, 0],
+                opacity: 0,
+                scale: 0
             },
             next: {
-                translate: ["100%", 0, 0],
-                opacity: 0.3,
+                translate: ["65%", 0, 0],
+                opacity: 1, //0.4
                 scale: .75
             }
         }
-
-
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
-
 }
 );
 

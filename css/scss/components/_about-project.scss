@@ -1,19 +1,46 @@
 .about-project {
+
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
+    font-size: 50px;
+
+    scroll-padding-top: 130px;
+
+    @media #{$laptop} {
+      margin-bottom: 35px;
+    }
+
+    @media #{$tablet} {
+      font-size: 35px;
+    }
   }
 
   .about-project__container {
     background: url('../images/about-project/01.png') no-repeat top
-      right/contain;
+      right/50% 100%;
     display: flex;
     flex-direction: column;
     margin-top: -60px;
     padding-top: 44px;
     padding-bottom: 111px;
 
+    @media #{$laptop} {
+      background: url('../images/about-project/01.png') no-repeat bottom
+      center/contain;
+      margin-top: 0;
+      padding: 0 10px 0;
+    }
+
     .about-project__wrapper {
       display: flex;
+
+      @media #{$laptop} {
+        margin-bottom: 60%;
+      }
+
+      @media #{$phone} {
+        margin-bottom: 220px;
+      }
 
       .about-project__description {
         position: relative;
@@ -23,8 +50,23 @@
         margin-right: -300px;
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(2px);
-        padding: 51px 40px 70px 116px;
-        border: 1px solid brown;
+        padding: 51px 40px 41px 116px;
+        //border: 1px solid brown;
+
+        @media #{$laptop} {
+          padding: 51px 40px 70px 40px;
+          margin-left: 0;
+          margin-right: 0;
+          max-width: 1130px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        @media #{$phone} {
+          padding: 0 5px 60px 10px;
+        }
 
         p {
           padding: 0;
@@ -35,7 +77,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: 22px;
-          margin-bottom: 30px;
+          margin-bottom: 24px;
         }
 
         p:nth-child(1) {
@@ -62,6 +104,8 @@
 
         .ul {
           p {
+            margin-bottom: 0;
+
             strong {
               color: #2c3e46;
               font-family: $font-family-title;
@@ -69,6 +113,7 @@
               font-style: normal;
               font-weight: 600;
               line-height: 22px;
+
             }
           }
 
@@ -76,6 +121,7 @@
             padding-left: 30px;
             //display: list-item;
             position: relative;
+            margin-bottom: 24px;
           }
 
           p:not(p:nth-child(1))::before {
@@ -100,7 +146,7 @@
           display: inline-flex;
           align-items: center;
           position: absolute;
-          bottom: -36px;
+          bottom: -32px;
           left: 120px;
           text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
           font-size: 16px;
@@ -110,6 +156,13 @@
 
           padding-right: 36px;
           padding-left: 36px;
+
+          @media #{$laptop} {
+            position: relative;
+            left: auto;
+            bottom: 0;
+            align-self: center;
+          }
         }
       }
     }

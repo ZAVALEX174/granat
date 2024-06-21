@@ -1,45 +1,62 @@
 .choose {
 
   .choose__container {
-    background: url('../images/project/02.png') no-repeat top
-    left/50% 453px;
-    border: 1px solid orange;
+    //max-width: 1920px;
+    //margin: 0 auto;
+    //background: url('../images/project/02.png') no-repeat top
+    //left/50% 453px;
+    background-image: url("../images/project/0201.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 50% auto;
+    //border: 1px solid orange;
     padding-top: 145px;
-    margin-bottom: 155px;
+    margin-bottom: 132px;
 
     .choose__swiper {
-      max-width: 1700px;
-      height: 767px;
+      //max-width: 1920px;
+      margin: 0 auto;
+      //height: 767px;//
       //background: rgba(255, 255, 255, 0.90);
       //backdrop-filter: blur(2px);
+      //border: 1px solid #266a58;
 
       .choose__swiper-wrapper {
+        margin: 0 auto;
+        //padding-left: 200px;
+        margin-left: -305px;
 
         .choose__swiper-slide {
-          //width: 974px;
-          //height: 767px;
+          //padding-left: 260px;
+          //max-width: 974px;
+          width: 100%;
+          //height: 767px;//
 
           .choose__swiper-slide-container {
+            //max-width: 1428px;
             display: flex;
             align-items: flex-end;
+            justify-content: center;
 
             .img-left{
               display: inline-block;
               margin-bottom: 100px;
+              margin-right: 50px;
+
               img {
 
               }
             }
 
             .content-box {
-              max-width: 974px;
+              //max-width: 974px;
               background: rgba(255, 255, 255, 0.90);
               backdrop-filter: blur(2px);
               padding: 55px 48px;
 
               .title {
                 margin-bottom: 48px;
-                max-width: 690px;
+                //max-width: 690px;
 
                 h2 {
                   color: #455A64;
@@ -65,8 +82,8 @@
               .description {
                 position: relative;
                 display: flex;
-                max-width: 974px;
-                border: 1px solid blue;
+                //max-width: 974px;
+                //border: 1px solid blue;
 
                 .image {
                   margin-right: 50px;
@@ -75,7 +92,7 @@
                 .text {
                   display: flex;
                   flex-direction: column;
-                  align-items: center;
+                  align-items: flex-start;
                   justify-content: flex-start;
                   margin-top: 20px;
 
@@ -117,28 +134,51 @@
     }
 
     .choose__navigation {
-      width: 173px;
+      position: absolute;
+      top: 324px;
+      right: 120px;
+      width: 133px;
+      height: 68px;
+      border-radius: 48px;
+      z-index: 50;
+      box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.005);
 
       .swiper-button-next::after {
         display: none;
       }
+
       .choose__swiper-button-next {
+        background: transparent;
+        //border: 1px solid grey;
         position: absolute;
-        top: 460px;
-        right: 251px;
+        height: 68px;
+        width: 67px;
+        top: 82%;
         border-radius: 0 48px 48px 0;
-        display: block;
-        background-color: #fff;
-        //width: 14px;
-        //height: 14px;
-        padding: 0 25px;
-        border: 1px solid green;
-        background-image: url("../images/arr/arr_right_red.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        line-height: 72px;
-        height: 72px;
-        width: 73px;
+        transform: translateY(-50%);
+        left: 67px;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: 0.3s linear;
+      }
+
+      .choose__swiper-button-next:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: 0.3s linear;
+      }
+
+      .choose__swiper-button-next:active {
+        box-shadow: none;
+      }
+
+      .choose__swiper-button-next::after {
+        display: inline-flex;
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: 27px;
+        left: 31px;
+        background: url("../images/arr/arr_right_red.svg") no-repeat;
       }
 
       .swiper-button-prev::after {
@@ -146,25 +186,39 @@
       }
 
       .choose__swiper-button-prev {
-        top: 460px;
-        left: auto;
-        right: 322px;
+        background: transparent;
+        //border: 1px solid red;
         position: absolute;
+        height: 68px;
+        width: 67px;
+        top: 82%;
         border-radius: 48px 0 0 48px;
-        background-color: #fff;
-        //width: 14px;
-        //height: 14px;
-        padding: 0 25px;
-        border: 1px solid green;
-        background-image: url("../images/arr/arr_left_def.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        line-height: 72px;
-        height: 72px;
-        width: 73px;
+        transform: translateY(-50%);
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: 0.3s linear;
+      }
+
+      .choose__swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: 0.3s linear;
+      }
+
+      .choose__swiper-button-prev:active {
+        box-shadow: none;
+      }
+
+      .choose__swiper-button-prev::after {
+        display: inline-flex;
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: 27px;
+        left: 20px;
+        background: url("../images/arr/arr_left_def.svg") no-repeat;
       }
     }
-
 
     .choose__pagination-box {
         position: relative;
@@ -174,10 +228,12 @@
         padding-left: 10px;
         height: 25px;
         margin: 0 auto;
-        top: -70px;
+        top: -10px;
         right: 0;
+        display: flex;
+        justify-content: center;
 
-        @media #{$phone} {
+      @media #{$phone} {
           top: -45px;
         }
 
@@ -185,6 +241,7 @@
           width: 370px;
           left: auto;
           right: 0;
+          border-radius: 10px;
 
           @media #{$phone} {
             width: 290px;
@@ -194,12 +251,12 @@
         }
 
         .choose__swiper-pagination {
-          width: 370px;
+          width: 552px;
           height: var(--swiper-pagination-progressbar-size, 4px);
-          right: 44px;
+          right: auto;
           top: 9px;
           border-radius: 10px;
-          background: rgba(229, 238, 245, 0.5);
+          background: #E5EEF5;
 
           @media #{$phone} {
             width: 290px;
@@ -214,7 +271,7 @@
         .choose__swiper-pagination::after {
           position: absolute;
           content: '05';
-          color: #f2f6fa;
+          color: #B8C5D4;
           font-family: $font-family-base;
           font-size: 20px;
           font-style: normal;
@@ -227,7 +284,7 @@
         .choose__swiper-pagination::before {
           position: absolute;
           content: '01';
-          color: #f2f6fa;
+          color: #B8C5D4;
           font-family: $font-family-base;
           font-size: 20px;
           font-style: normal;

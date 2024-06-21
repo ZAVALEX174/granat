@@ -7,7 +7,8 @@
 
   padding-top: 40px;
   //margin-bottom: 272px;
-  height: 710px;
+  height: 695px;
+
 
   @media #{$tablet} {
     height: 827px;
@@ -96,7 +97,7 @@
             max-width: 540px;
             margin: 0;
             width: 100%;
-            padding: 13px 24px;
+            padding: 14px 24px;
             margin-bottom: 11px;
             font-family: $font-family-title;
             font-size: 14px;
@@ -146,7 +147,7 @@
       .consultation__form-foto {
         position: relative;
         z-index: 150;
-        top: 100px;
+        top: 87px;
         margin-bottom: -83px;
 
         @media #{$tablet} {
@@ -161,7 +162,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          margin-bottom: 11px;
+          margin-bottom: 5px;
 
 
           @media #{$tablet} {

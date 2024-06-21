@@ -519,7 +519,8 @@
         .hero__swiper-pagination::after {
           position: absolute;
           content: '04';
-          color: #f2f6fa;
+          //color: #f2f6fa;
+          color: #df2c46;
           font-family: $font-family-base;
           font-size: 20px;
           font-style: normal;
@@ -532,7 +533,8 @@
         .hero__swiper-pagination::before {
           position: absolute;
           content: '01';
-          color: #f2f6fa;
+          //color: #f2f6fa;
+          color: #df2c46;
           font-family: $font-family-base;
           font-size: 20px;
           font-style: normal;
