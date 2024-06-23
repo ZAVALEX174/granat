@@ -535,7 +535,7 @@ a {
 
 .footer {
   position: relative;
-  margin-top: -205px;
+  margin-top: -204px;
   padding-top: 18px;
   background: rgba(12, 17, 19, 0.9);
 }
@@ -964,7 +964,7 @@ main {
 .hero .hero__container .hero__swiper .hero__pagination-box .hero__swiper-pagination::after {
   position: absolute;
   content: "04";
-  color: #df2c46;
+  color: #f2f6fa;
   font-family: "Anticva", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -976,7 +976,7 @@ main {
 .hero .hero__container .hero__swiper .hero__pagination-box .hero__swiper-pagination::before {
   position: absolute;
   content: "01";
-  color: #df2c46;
+  color: #f2f6fa;
   font-family: "Anticva", sans-serif;
   font-size: 20px;
   font-style: normal;
