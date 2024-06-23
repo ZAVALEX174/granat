@@ -2532,4 +2532,48 @@ main {
   z-index: 70;
   transform: scale(-1, 1);
   pointer-events: none;
+}
+
+.modal2 .modal__container {
+  border: 1px solid #fff;
+  max-width: 665px;
+  width: 100%;
+}
+.modal2 .modal__container .modal__text {
+  padding: 110px 60px 188px 60px;
+  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  background-color: #fff;
+  backdrop-filter: blur(5px);
+}
+.modal2 .modal__container .modal__text h2 {
+  color: #f60030;
+  text-align: center;
+  font-family: "Anticva", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.modal2 .modal__container .modal__text p:first-of-type {
+  color: #902130;
+  text-align: center;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.modal2 .modal__container .modal__text p:last-of-type {
+  color: #9ba4a8;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
