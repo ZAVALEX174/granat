@@ -9,13 +9,13 @@
     height: 0;
   }
 }
-  .fancybox__backdrop {
-    backdrop-filter: blur(5px);
-  }
+.fancybox__backdrop {
+  backdrop-filter: blur(5px);
+}
 
-  .fancybox__backdrop {
-    background: rgba(0, 0, 0, 0.65) !important;
-  }
+.fancybox__backdrop {
+  background: rgba(0, 0, 0, 0.65) !important;
+}
 
 .is-close-btn {
   padding-left: 0 !important;
@@ -49,7 +49,7 @@
       max-width: 764px;
       width: 100%;
       border-radius: 34px;
-      background-color: rgba(5, 8, 14, 0.60);
+      background-color: rgba(5, 8, 14, 0.6);
       backdrop-filter: blur(5px);
 
       form {
@@ -70,19 +70,18 @@
           margin-bottom: 15px;
         }
 
-          span {
-            max-width: 440px;
-            padding: 0;
-            margin: 0;
-            color: #9BA4A8;
-            font-family: $font-family-title;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 16px;
-            margin-bottom: 15px;
-          }
-
+        span {
+          max-width: 440px;
+          padding: 0;
+          margin: 0;
+          color: #9ba4a8;
+          font-family: $font-family-title;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+          margin-bottom: 15px;
+        }
 
         input {
           padding: 12px 21px 14px;
@@ -99,12 +98,12 @@
           max-width: 518px;
           width: 100%;
           border-radius: 23.5px;
-          border: 1px solid rgba(65, 68, 79, 0.20);
-          background: rgba(27, 29, 32, 0.60);
+          border: 1px solid rgba(65, 68, 79, 0.2);
+          background: rgba(27, 29, 32, 0.6);
         }
 
         ::placeholder {
-          color: #FFF;
+          color: #fff;
           font-family: $font-family-base;
           font-size: 14px;
           font-style: normal;
@@ -119,7 +118,7 @@
           max-width: 440px;
 
           .link-warning {
-            color: #363D41;
+            color: #363d41;
             font-family: $font-family-title;
             font-size: 14px;
             font-style: normal;
@@ -146,7 +145,7 @@
         border-radius: 35px;
         width: 252px;
         height: 397px;
-        background: url("../images/fansy/01.svg");
+        background: url('../images/fansy/01.svg');
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 70;
@@ -154,8 +153,6 @@
         pointer-events: none;
       }
     }
-
-
   }
 }
 
