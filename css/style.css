@@ -43,12 +43,14 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   min-height: 100vh;
   background: #f9fafc;
-  scroll-behavior: smooth;
-  scroll-padding-top: 130px;
 }
 
 body {
@@ -58,7 +60,6 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1120,7 +1121,6 @@ main {
 .about-project h2 {
   margin-bottom: 46px;
   font-size: 50px;
-  scroll-padding-top: 130px;
 }
 @media screen and (max-width: 1440px) {
   .about-project h2 {
@@ -1516,7 +1516,6 @@ main {
   font-weight: 400;
   line-height: 38px; /* 50% */
   margin-bottom: 7px;
-  scroll-padding-top: 130px;
 }
 @media screen and (max-width: 500px) {
   .infrastructure h2 {
@@ -1803,7 +1802,6 @@ main {
   line-height: 25px; /* 50% */
   position: relative;
   z-index: 10;
-  scroll-padding-top: 130px;
 }
 .layouts .layouts-swipers-box {
   max-width: 1920px;
@@ -2410,7 +2408,7 @@ main {
 }
 
 .fancybox__backdrop {
-  background: rgba(225, 225, 225, 0.65) !important;
+  background: rgba(0, 0, 0, 0.65) !important;
 }
 
 .is-close-btn {
@@ -2464,7 +2462,7 @@ main {
   max-width: 440px;
   padding: 0;
   margin: 0;
-  color: #9BA4A8;
+  color: #9ba4a8;
   font-family: "Gilroy", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2491,7 +2489,7 @@ main {
   background: rgba(27, 29, 32, 0.6);
 }
 .modal .modal__container .modal__form form ::placeholder {
-  color: #FFF;
+  color: #fff;
   font-family: "Anticva", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2505,7 +2503,7 @@ main {
   max-width: 440px;
 }
 .modal .modal__container .modal__form form .sub__cont .link-warning {
-  color: #363D41;
+  color: #363d41;
   font-family: "Gilroy", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2534,33 +2532,4 @@ main {
   z-index: 70;
   transform: scale(-1, 1);
   pointer-events: none;
-}
-
-.modal-image {
-  max-width: 500px;
-  height: auto;
-}
-.modal-image .modal__container_image {
-  width: 100%;
-  height: 100%;
-}
-.modal-image .modal__container_image .licenses__gallery_item {
-  position: relative;
-}
-.modal-image .modal__container_image .licenses__gallery_item p {
-  color: #fff;
-}
-.modal-image .modal__container_image .licenses__gallery_item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.modal-image .modal__container_image .licenses__gallery_item::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
