@@ -2032,6 +2032,11 @@ main {
     display: none;
   }
 }
+@media screen and (max-width: 500px) {
+  .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .shema-plan {
+    height: 204px;
+  }
+}
 .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .shema-plan img {
   width: 100%;
   height: 100%;
@@ -2057,6 +2062,11 @@ main {
 @media screen and (max-width: 767px) {
   .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .dt2::before {
     top: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .dt2::before {
+    display: none;
   }
 }
 .layouts .layouts-swipers-box .mySwiper2 .layouts__swiper-wrapper2 .layouts__swiper-slide2 .desc {

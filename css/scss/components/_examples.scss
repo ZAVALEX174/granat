@@ -83,6 +83,10 @@
               display: none;
             }
 
+            @media #{$phone} {
+              height: 204px;
+            }
+
             img {
               width: 100%;
               height: 100%;
@@ -108,6 +112,10 @@
 
             @media #{$tablet-mini} {
               top: 70px;
+            }
+
+            @media #{$phone} {
+              display: none;
             }
           }
 
