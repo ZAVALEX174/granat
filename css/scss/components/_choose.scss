@@ -1,11 +1,10 @@
 .choose {
-
   .choose__container {
     //max-width: 1920px;
     //margin: 0 auto;
     //background: url('../images/project/02.png') no-repeat top
     //left/50% 453px;
-    background-image: url("../images/project/0201.png");
+    background-image: url('../images/project/0201.png');
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 50% auto;
@@ -38,19 +37,18 @@
             align-items: flex-end;
             justify-content: center;
 
-            .img-left{
+            .img-left {
               display: inline-block;
               margin-bottom: 100px;
               margin-right: 50px;
 
               img {
-
               }
             }
 
             .content-box {
               //max-width: 974px;
-              background: rgba(255, 255, 255, 0.90);
+              background: rgba(255, 255, 255, 0.9);
               backdrop-filter: blur(2px);
               padding: 55px 48px;
 
@@ -59,7 +57,7 @@
                 //max-width: 690px;
 
                 h2 {
-                  color: #455A64;
+                  color: #455a64;
                   font-size: 50px;
                   font-style: normal;
                   font-weight: 400;
@@ -69,13 +67,12 @@
                 }
 
                 p {
-                  color: #758B96;
+                  color: #758b96;
                   font-size: 30px;
                   font-style: normal;
                   font-weight: 400;
                   line-height: 40px;
                   text-transform: uppercase;
-
                 }
               }
 
@@ -97,14 +94,14 @@
                   margin-top: 20px;
 
                   h3 {
-                    color: #455A64;
+                    color: #455a64;
                     font-size: 25px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 40px; /* 160% */
 
                     strong {
-                      color: #DF2C46;
+                      color: #df2c46;
                       font-size: 40px;
                       font-style: normal;
                       font-weight: 400;
@@ -113,7 +110,7 @@
                   }
 
                   p {
-                    color: #2C3E46;
+                    color: #2c3e46;
                     font-family: $font-family-title;
                     font-size: 18px;
                     font-style: normal;
@@ -178,7 +175,7 @@
         height: 12px;
         top: 27px;
         left: 31px;
-        background: url("../images/arr/arr_right_red.svg") no-repeat;
+        background: url('../images/arr/arr_right_red.svg') no-repeat;
       }
 
       .swiper-button-prev::after {
@@ -216,86 +213,112 @@
         height: 12px;
         top: 27px;
         left: 20px;
-        background: url("../images/arr/arr_left_def.svg") no-repeat;
+        background: url('../images/arr/arr_left_def.svg') no-repeat;
       }
     }
 
     .choose__pagination-box {
-        position: relative;
-        z-index: 200;
-        max-width: 1520px;
-        padding-right: 10px;
-        padding-left: 10px;
-        height: 25px;
-        margin: 0 auto;
-        top: -10px;
-        right: 0;
-        display: flex;
-        justify-content: center;
+      position: relative;
+      z-index: 200;
+      max-width: 1520px;
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 25px;
+      margin: 0 auto;
+      top: -10px;
+      right: 0;
+      display: flex;
+      justify-content: center;
 
       @media #{$phone} {
-          top: -45px;
-        }
+        top: -45px;
+      }
 
-        .swiper-pagination-horizontal {
-          width: 370px;
-          left: auto;
-          right: 0;
-          border-radius: 10px;
+      .swiper-pagination-horizontal {
+        width: 370px;
+        left: auto;
+        right: 0;
+        border-radius: 10px;
 
-          @media #{$phone} {
-            width: 290px;
-            //left: auto;
-            right: auto;
-          }
-        }
-
-        .choose__swiper-pagination {
-          width: 552px;
-          height: var(--swiper-pagination-progressbar-size, 4px);
+        @media #{$phone} {
+          width: 290px;
+          //left: auto;
           right: auto;
-          top: 9px;
+        }
+      }
+
+      .choose__swiper-pagination {
+        width: 552px;
+        height: var(--swiper-pagination-progressbar-size, 4px);
+        right: auto;
+        top: 9px;
+        border-radius: 10px;
+        background: #e5eef5;
+
+        @media #{$phone} {
+          width: 290px;
+        }
+
+        .swiper-pagination-progressbar-fill {
           border-radius: 10px;
-          background: #E5EEF5;
-
-          @media #{$phone} {
-            width: 290px;
-          }
-
-          .swiper-pagination-progressbar-fill {
-            border-radius: 10px;
-            background: #df2c46;
-          }
+          background: #df2c46;
         }
+      }
 
-        .choose__swiper-pagination::after {
-          position: absolute;
-          content: '05';
-          color: #B8C5D4;
-          font-family: $font-family-base;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          top: -10px;
-          right: -33px;
+      .choose__swiper-pagination::after {
+        position: absolute;
+        content: '05';
+        color: #b8c5d4;
+        font-family: $font-family-base;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        top: -10px;
+        right: -33px;
+      }
+
+      .choose__swiper-pagination::before {
+        position: absolute;
+        content: '01';
+        color: #b8c5d4;
+        font-family: $font-family-base;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        top: -10px;
+        left: -33px;
+      }
+    }
+  }
+}
+.swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible {
+  border: 3px solid red;
+  opacity: 0.4 !important;
+
+  .choose__swiper-slide-container {
+    .img-left {
+      border: 1px solid rgb(18, 228, 112);
+      display: none !important;
+    }
+
+    .content-box {
+      border: 1px solid rgb(87, 7, 192);
+
+      .title {
+        display: none !important;
+      }
+
+      .description {
+        .image {
+          width: 340px;
+          height: 520px;
         }
-
-        .choose__swiper-pagination::before {
-          position: absolute;
-          content: '01';
-          color: #B8C5D4;
-          font-family: $font-family-base;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          top: -10px;
-          left: -33px;
+        .text {
+          display: none !important;
         }
-
-
-
+      }
     }
   }
 }
