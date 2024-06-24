@@ -1,9 +1,9 @@
 // const goUpBtn = document.querySelector('.button-go-up');
 // // console.log(goUpBtn);
-
+//
 // window.addEventListener('scroll', trackScroll);
 // goUpBtn.addEventListener('click', goUp);
-
+//
 // function trackScroll() {
 //     // вычисляем положение от верхушки страницы
 //     const scrolled = window.scrollY;
@@ -20,7 +20,7 @@
 //         goUpBtn.classList.remove("button-go-up__show");
 //     }
 // }
-
+//
 // function goUp() {
 //     // пока не вернулись в начало страницы
 //     if (window.scrollY > 0) {
@@ -31,15 +31,19 @@
 // }
 
 //////////////////
-$(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() != 0) {
-            $('.button-go-up').fadeIn();
-        } else {
-            $('.button-go-up').fadeOut();
-        }
-    });
-    $('.button-go-up').click(function () {
-        $('body,html').animate({ scrollTop: 0 }, 20);
-    });
+$(document).ready(function () {
+    if ($(window).width() >= 999) {
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('.button-go-up').fadeIn();
+                } else {
+                    $('.button-go-up').fadeOut();
+                }
+            });
+            $('.button-go-up').click(function () {
+                $('body,html').animate({scrollTop: 0}, 20);
+            });
+        });
+    }
 });

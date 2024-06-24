@@ -1,7 +1,18 @@
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 22,
+    spaceBetween: 0,
     slidesPerView: 4,
 
+    breakpoints: {
+               // when window width is >= 999px
+        320: {
+            slidesPerView: 1,
+        },
+        1000: {
+            slidesPerView: 4,
+        },
+
+    },
+// loop: true,
     freeMode: true,
     watchSlidesProgress: true,
     navigation: {
@@ -12,6 +23,8 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
+    slidesPerView: 1,
+    // loop: true,
     // effect: "fade",
     navigation: {
         nextEl: ".swiper-button-next",
