@@ -9,9 +9,12 @@
   //margin-bottom: 272px;
   height: 695px;
 
-
   @media #{$tablet} {
-    height: 827px;
+    height: 1100px;;
+  }
+
+  @media #{$phone} {
+    height: 1006px;
   }
 
   .consultation__container {
@@ -154,6 +157,13 @@
           margin-bottom: -400px;
         }
 
+        @media #{$phone} {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: -420px;
+          top: 50px;
+        }
+
         .foto__title {
           padding-left: 48px;
           color: #fff;
@@ -164,10 +174,14 @@
           line-height: normal;
           margin-bottom: 5px;
 
-
           @media #{$tablet} {
             padding-left: 0;
             text-align: center;
+          }
+
+          @media #{$phone} {
+            order: 2;
+            margin-top: -70px;
           }
 
           span {

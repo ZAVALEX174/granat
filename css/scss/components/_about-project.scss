@@ -10,6 +10,8 @@
 
     @media #{$tablet} {
       font-size: 35px;
+      margin-bottom: 28px;
+      padding-left: 10px;
     }
   }
 
@@ -29,6 +31,11 @@
       padding: 0 10px 0;
     }
 
+    @media #{$phone} {
+      //margin-bottom: 71px;
+      margin-bottom: 1125px;
+    }
+
     .about-project__wrapper {
       display: flex;
 
@@ -37,7 +44,7 @@
       }
 
       @media #{$phone} {
-        margin-bottom: 220px;
+        margin-bottom: 164px;
       }
 
       .about-project__description {
@@ -76,6 +83,13 @@
           font-weight: 400;
           line-height: 22px;
           margin-bottom: 24px;
+
+          @media #{$phone} {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            margin-bottom: 15px;
+          }
         }
 
         p:nth-child(1) {
@@ -90,6 +104,11 @@
         }
 
         p:nth-child(2) {
+
+          @media #{$phone} {
+            margin-bottom: 17px;
+          }
+
           strong {
             color: #2c3e46;
             font-family: $font-family-title;
@@ -97,6 +116,12 @@
             font-style: normal;
             font-weight: 500;
             line-height: 22px;
+
+            @media #{$phone} {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 18px;
+            }
           }
         }
 
@@ -112,6 +137,11 @@
               font-weight: 600;
               line-height: 22px;
 
+              @media #{$phone} {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 18px;
+              }
             }
           }
 
@@ -120,6 +150,11 @@
             //display: list-item;
             position: relative;
             margin-bottom: 24px;
+
+            @media #{$phone} {
+              padding-left: 20px;
+              margin-bottom: 20px;
+            }
           }
 
           p:not(p:nth-child(1))::before {
@@ -138,6 +173,10 @@
               height: 3px;
             }
           }
+        }
+
+        p:last-of-type {
+          margin-bottom: 50px;
         }
 
         .about-project__btn {

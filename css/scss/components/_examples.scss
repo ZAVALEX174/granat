@@ -11,9 +11,19 @@
     //scroll-margin-top: 540px;
 
     // scroll-padding-top: 130px;
+
+    @media #{$tablet-mini} {
+     text-align: center;
+      color: #F60030;
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 45px; /* 100% */
+    }
   }
 
   .layouts-swipers-box {
+    //display: flex;
+    //flex-direction: column;
     max-width: 1920px;
     width: 100%;
     min-height: 1100px;
@@ -21,6 +31,10 @@
     padding-right: 10px;
     padding-left: 10px;
     margin-top: -70px;
+
+    @media #{$notebook_s} {
+      margin-top: 0;
+    }
 
     .mySwiper2 {
       //margin-right: -100px;
@@ -31,11 +45,21 @@
       width: 100%;
       height: 65%;
 
+      @media #{$tablet-mini} {
+       //text-align: center;
+      }
+
       .layouts__swiper-wrapper2 {
+
         .layouts__swiper-slide2 {
           display: flex;
           align-items: flex-end;
           justify-content: center;
+
+          @media #{$tablet-mini} {
+            flex-direction: column;
+            align-items: center;
+          }
 
           .shema-plan {
             position: relative;
@@ -44,9 +68,16 @@
             align-items: flex-end;
             margin-bottom: 30px;
             padding-left: 25px;
-            height: 537px;
-            max-width: 980px;
+            height: 600px;
+            max-width: 1000px;
             width: 100%;
+            border: 1px solid red;
+
+            @media #{$tablet-mini} {
+              margin-right: 0;
+              padding-left: 0;
+              display: none;
+            }
 
             img {
               width: 100%;
@@ -58,14 +89,22 @@
           .dt2::before {
             position: absolute;
             content: attr(data-title);
-            color: rgba(227, 232, 235, 0.5);
+            color: rgba(223, 44, 70, 0.3);
             font-family: $font-family-base;
             font-size: 150px;
             font-style: normal;
             font-weight: 400;
             line-height: 14px; /* 9.333% */
-            top: 0;
+            top: 60px;
             left: -10px;
+
+            @media #{$tablet} {
+              top: 100px;
+            }
+
+            @media #{$tablet-mini} {
+              top: 70px;
+            }
           }
 
           .desc {
@@ -75,6 +114,14 @@
             background: rgba(255, 255, 255, 0.6);
             box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.05);
             padding: 40px;
+
+            @media #{$tablet-mini} {
+              padding: 0;
+              max-width: 100%;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-top: 25px;
+            }
 
             .title {
               h3 {
@@ -95,6 +142,20 @@
                 font-weight: 400;
                 line-height: 22px; /* 110% */
                 margin-bottom: 25px;
+              }
+            }
+
+            .shema-plan-mob {
+              display: none;
+
+              @media #{$tablet-mini} {
+                margin-right: 0;
+                padding-left: 0;
+                display: flex;
+
+                .shema-plan {
+                  display: block;
+                }
               }
             }
 
@@ -128,10 +189,19 @@
               width: 440px;
               height: 233px;
 
+              @media #{$tablet-mini} {
+                max-width: 760px;
+                width: 100%;
+              }
+
               img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+
+                @media #{$tablet-mini} {
+                  object-fit: cover;
+                }
               }
             }
           }
@@ -158,6 +228,14 @@
         box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.005);
         border-radius: 48px;
         z-index: 50;
+
+        @media #{$desktop_x} {
+          right: 0;
+        }
+
+        @media #{$tablet} {
+          display: none;
+        }
 
         .swiper-button-prev::after {
           display: none;
@@ -239,62 +317,106 @@
     }
 
     .mySwiper {
-      max-width: 1591px;
-      width: 100%;
-      margin-left: 100px;
+      //max-width: 1591px;
+      //width: 100%;
+      max-width: 1620px;
+      margin-left: 128px;
       height: 35%;
       position: relative;
       margin-bottom: 94px;
-      padding: 0 100px;
-      padding-left: 30px;
+      //padding: 0 100px;
+      //padding-left: 30px;
       padding-bottom: 100px;
+      box-sizing: border-box;
       overflow: hidden;
+      border: 1px solid orange;
 
-      .swiper-wrapper02 {
-        max-width: 1561px;
-        background-color: #fff;
-        position: relative;
-        z-index: 50;
-        padding: 43px 133px 38px 54px;
-
-        .layouts__swiper-slide {
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding-left: 100px;
-          max-width: 450px;
-          filter: grayscale(100%); //для проверки
-
-          img {
-            //width: 100%;
-            //height: 100%;
-            //object-fit: contain;
-          }
-        }
-
-        .swiper-slide-thumb-active {
-          // opacity: 1;
-          filter: grayscale(0);
-        }
-
-        .dt::before {
-          position: absolute;
-          content: attr(data-title);
-          color: rgba(227, 232, 235, 0.5);
-          font-family: $font-family-base;
-          font-size: 70px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 14px; /* 20% */
-          top: 0;
-          left: 0;
-        }
-
-        .dt:not(:nth-child(1))::before {
-          left: 40px;
-        }
+      @media #{$desktop} {
+        margin-left: auto;
       }
+
+      @media #{$tablet} {
+        order: 1;
+      }
+
+        .swiper-wrapper02 {
+          //min-height: 252px;
+
+          //width: 2000px;
+          position: relative;
+          z-index: 50;
+          border: 1px solid green;
+          background-color: #fff;
+          //padding-left: 54px;
+          margin-left: 54px;
+
+          @media #{$desktop} {
+            margin-left: auto;
+          }
+
+
+
+          .layouts__swiper-slide {
+            //padding: 43px 0 38px 0;
+            border: 1px solid red;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            //padding-left: 100px;
+            //max-width: 375px;
+            width: 25%;
+            background-color: #fff;
+            filter: grayscale(100%); //для проверки
+
+            @media #{$tablet} {
+              width: 100%;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .layouts__swiper-slide:first-child {
+            //padding: 0 0 0 100px;
+
+          }
+
+          .swiper-slide-thumb-active {
+            // opacity: 1;
+            filter: grayscale(0);
+          }
+
+          .dt::before {
+            position: absolute;
+            content: attr(data-title);
+            //color: rgba(227, 232, 235, 0.5);
+            color: rgba(223, 44, 70, 0.3);
+            font-family: $font-family-base;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px; /* 20% */
+            top: 30px;
+            left: 0;
+
+            @media #{$desktop} {
+              font-size: 50px;
+            }
+
+            @media #{$notebook_s} {
+              font-size: 40px;
+            }
+          }
+
+          //.dt:not(:nth-child(1))::before {
+          //  left: 40px;
+          //}
+      }
+
 
       .swiper-button-next {
         width: 50px;
@@ -306,6 +428,10 @@
         top: 40%;
         transform: translateY(-50%);
         right: 10px;
+
+        @media #{$tablet} {
+          display: none;
+        }
       }
 
       .swiper-button-next::after {
@@ -323,7 +449,7 @@
         display: none;
       }
 
-      .mySwiper__swiper-button-next::after {
+      .mySwiper2__swiper-button-next::after {
         position: absolute;
         content: '';
         display: inline-flex;
@@ -359,6 +485,10 @@
         display: flex;
         justify-content: center;
 
+        @media #{$laptop_s} {
+          left: 0;
+        }
+
         @media #{$phone} {
           top: -45px;
         }
@@ -384,8 +514,13 @@
           border-radius: 10px;
           background: #e5eef5;
 
+          @media #{$tablet-mini} {
+            width: 390px;
+          }
+
           @media #{$phone} {
-            width: 290px;
+            width: 250px;
+            border-radius: 10px;
           }
 
           .swiper-pagination-progressbar-fill {
@@ -396,7 +531,7 @@
 
         .mySwiper2__swiper-pagination::after {
           position: absolute;
-          content: '04';
+          content: '09';
           color: #b8c5d4;
           font-family: $font-family-base;
           font-size: 20px;
@@ -422,17 +557,17 @@
       }
     }
 
-    // сюда
-    .mySwiper::before {
-      position: absolute;
-      display: block;
-      content: '';
-      width: 1111px;
-      height: 277px;
-      background-color: rgba(204, 214, 219, 0.3);
-      top: 34px;
-      left: -21px;
-      z-index: 1;
-    }
+    //// сюда
+    //.mySwiper::before {
+    //  position: absolute;
+    //  display: block;
+    //  content: '';
+    //  width: 1111px;
+    //  height: 277px;
+    //  background-color: rgba(204, 214, 219, 0.3);
+    //  top: 34px;
+    //  left: -21px;
+    //  z-index: 0;
+    //}
   }
 }

@@ -100,7 +100,11 @@
 
     @media #{$phone} {
       margin-top: 10px;
-      padding: 10px 22px 10px 12px;
+      //padding: 10px 22px 10px 12px;
+      padding: 5px 22px 10px 12px;
+      border-radius: 25px;
+      background: rgba(14, 2, 3, 0.30);
+      backdrop-filter: blur(5px);
     }
 
     .header__nav {
