@@ -1435,7 +1435,7 @@ main {
   margin-bottom: 48px;
 }
 .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .title h2 {
-  color: #455A64;
+  color: #455a64;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -1444,7 +1444,7 @@ main {
   margin-bottom: 0;
 }
 .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .title p {
-  color: #758B96;
+  color: #758b96;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -1466,21 +1466,21 @@ main {
   margin-top: 20px;
 }
 .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .description .text h3 {
-  color: #455A64;
+  color: #455a64;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 160% */
 }
 .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .description .text h3 strong {
-  color: #DF2C46;
+  color: #df2c46;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
 }
 .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .description .text p {
-  color: #2C3E46;
+  color: #2c3e46;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -1601,7 +1601,7 @@ main {
   right: auto;
   top: 9px;
   border-radius: 10px;
-  background: #E5EEF5;
+  background: #e5eef5;
 }
 @media screen and (max-width: 500px) {
   .choose .choose__container .choose__pagination-box .choose__swiper-pagination {
@@ -1615,7 +1615,7 @@ main {
 .choose .choose__container .choose__pagination-box .choose__swiper-pagination::after {
   position: absolute;
   content: "05";
-  color: #B8C5D4;
+  color: #b8c5d4;
   font-family: "Anticva", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -1627,7 +1627,7 @@ main {
 .choose .choose__container .choose__pagination-box .choose__swiper-pagination::before {
   position: absolute;
   content: "01";
-  color: #B8C5D4;
+  color: #b8c5d4;
   font-family: "Anticva", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -1635,6 +1635,28 @@ main {
   line-height: normal;
   top: -10px;
   left: -33px;
+}
+
+.swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible {
+  border: 3px solid red;
+  opacity: 0.4 !important;
+}
+.swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible .choose__swiper-slide-container .img-left {
+  border: 1px solid rgb(18, 228, 112);
+  display: none !important;
+}
+.swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible .choose__swiper-slide-container .content-box {
+  border: 1px solid rgb(87, 7, 192);
+}
+.swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible .choose__swiper-slide-container .content-box .title {
+  display: none !important;
+}
+.swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible .choose__swiper-slide-container .content-box .description .image {
+  width: 340px;
+  height: 520px;
+}
+.swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible .choose__swiper-slide-container .content-box .description .text {
+  display: none !important;
 }
 
 .infrastructure h2 {
