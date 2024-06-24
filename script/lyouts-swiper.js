@@ -1,18 +1,34 @@
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 0,
     slidesPerView: 4,
+    // centeredSlides: true,
+    // centeredSlidesBounds: true,
+    // centerInsufficientSlides: true,
+    touchAngle: 45,
+    grabCursor: true,
+    shortSwipes: false,
+    centeredSlides: true,
+    slidesPerGroup: 1,
+    // autoplay: {
+    //     delay: 5000,
+    // },
+
+
 
     breakpoints: {
-               // when window width is >= 999px
+        // when window width is >= 999px
         320: {
-            slidesPerView: 1,
+            // slidesPerView: 1,
+            slidesPerView: "auto",
+            freeMode: false,
         },
         1000: {
             slidesPerView: 4,
         },
 
     },
-// loop: true,
+    // loop: true,
+
     freeMode: true,
     watchSlidesProgress: true,
     navigation: {
@@ -24,6 +40,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     slidesPerView: 1,
+    grabCursor: true,
     // loop: true,
     // effect: "fade",
     navigation: {
