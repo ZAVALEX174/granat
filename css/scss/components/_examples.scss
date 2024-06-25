@@ -31,6 +31,7 @@
     padding-right: 10px;
     padding-left: 10px;
     margin-top: -70px;
+    margin-bottom: 133px;
 
     @media #{$notebook_s} {
       margin-top: 0;
@@ -39,6 +40,7 @@
     @media #{$phone} {
       display: flex;
       flex-direction: column-reverse;
+      margin-bottom: 73px;
     }
 
     .mySwiper2 {
@@ -75,7 +77,7 @@
             height: 600px;
             max-width: 1000px;
             width: 100%;
-            border: 1px solid red;
+            //border: 1px solid red;
 
             @media #{$tablet-mini} {
               margin-right: 0;
@@ -282,9 +284,21 @@
           content: '';
           width: 12px;
           height: 12px;
-          top: 27px;
+          top: 28px;
           left: 20px;
           background: url('../images/arr/arr_left_def.svg') no-repeat;
+        }
+
+        .mySwiper2__swiper-button-prev:hover::after {
+          display: inline-flex;
+          position: absolute;
+          content: '';
+          width: 12px;
+          height: 12px;
+          top: 29px;
+          left: 20px;
+          transform: rotate(180deg);
+          background: url('../images/arr/arr_right_red.svg') no-repeat;
         }
 
         .swiper-button-next::after {
@@ -321,7 +335,18 @@
           content: '';
           width: 12px;
           height: 12px;
-          top: 27px;
+          top: 28px;
+          left: 31px;
+          background: url('../images/arr/arr_right_def.svg') no-repeat;
+        }
+
+        .mySwiper2__swiper-button-next:hover::after {
+          display: inline-flex;
+          position: absolute;
+          content: '';
+          width: 12px;
+          height: 12px;
+          top: 28px;
           left: 31px;
           background: url('../images/arr/arr_right_red.svg') no-repeat;
         }
@@ -331,17 +356,17 @@
     .mySwiper {
       //max-width: 1591px;
       //width: 100%;
-      max-width: 1620px;
+      max-width: 1600px;
       margin-left: 128px;
       height: 35%;
       position: relative;
-      margin-bottom: 94px;
+      //margin-bottom: 94px;
       //padding: 0 100px;
       //padding-left: 30px;
       padding-bottom: 100px;
       box-sizing: border-box;
       overflow: hidden;
-      border: 1px solid orange;
+      //border: 1px solid orange;
 
       @media #{$desktop} {
         margin-left: auto;
@@ -356,23 +381,22 @@
       }
 
       .swiper-wrapper02 {
-        //min-height: 252px;
-
         //width: 2000px;
         position: relative;
         z-index: 50;
-        border: 1px solid green;
+        //border: 1px solid green;
         background-color: #fff;
-        //padding-left: 54px;
-        margin-left: 54px;
+        left: 21px;
+
 
         @media #{$desktop} {
           margin-left: auto;
         }
 
         .layouts__swiper-slide {
-          //padding: 43px 0 38px 0;
-          border: 1px solid red;
+          padding-top: 22px;
+          padding-bottom: 22px;
+          //border: 1px solid red;
           text-align: center;
           display: flex;
           align-items: center;
@@ -467,6 +491,15 @@
         display: inline-flex;
         width: 12px;
         height: 12px;
+        background: url('../images/arr/arr_right_def.svg') no-repeat;
+      }
+
+      .mySwiper2__swiper-button-next:hover::after {
+        position: absolute;
+        content: '';
+        display: inline-flex;
+        width: 12px;
+        height: 12px;
         background: url('../images/arr/arr_right_red.svg') no-repeat;
       }
 
@@ -483,6 +516,16 @@
         background: url('../images/arr/arr_left_def.svg') no-repeat;
       }
 
+      .mySwiper__swiper-button-prev:hover::after {
+        position: absolute;
+        content: '';
+        display: inline-flex;
+        width: 12px;
+        height: 12px;
+        transform: rotate(180deg);
+        background: url('../images/arr/arr_right_red.svg') no-repeat;
+      }
+
       .mySwiper2__pagination-box {
         position: relative;
         z-index: 200;
@@ -491,7 +534,8 @@
         padding-left: 10px;
         height: 25px;
         margin: 0 auto;
-        top: 50px;
+        //top: 50px;
+        top: 95px;
         right: 0;
         left: 90px;
         display: flex;
@@ -523,7 +567,7 @@
           height: var(--swiper-pagination-progressbar-size, 4px);
           right: auto;
           top: 9px;
-          border-radius: 10px;
+          //border-radius: 10px;
           background: #e5eef5;
 
           @media #{$tablet-mini} {
@@ -532,10 +576,11 @@
 
           @media #{$phone} {
             width: 250px;
-            border-radius: 10px;
+            //border-radius: 10px;
           }
 
           .swiper-pagination-progressbar-fill {
+
             border-radius: 10px !important;
             background: #df2c46;
           }
@@ -550,7 +595,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          top: -10px;
+          top: -8px;
           right: -33px;
         }
 
@@ -563,23 +608,23 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          top: -10px;
+          top: -8px;
           left: -33px;
         }
       }
     }
 
     //// сюда
-    //.mySwiper::before {
-    //  position: absolute;
-    //  display: block;
-    //  content: '';
-    //  width: 1111px;
-    //  height: 277px;
-    //  background-color: rgba(204, 214, 219, 0.3);
-    //  top: 34px;
-    //  left: -21px;
-    //  z-index: 0;
-    //}
+    .mySwiper::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 1111px;
+      height: 277px;
+      background-color: rgba(204, 214, 219, 0.3);
+      top: 34px;
+      left: -21px;
+      z-index: 0;
+    }
   }
 }

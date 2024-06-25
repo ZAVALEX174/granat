@@ -10,20 +10,30 @@
     background-size: 50% auto;
     //border: 1px solid orange;
     padding-top: 145px;
-    margin-bottom: 132px;
+    margin-bottom: 108px;
+
+    @media #{$tablet} {
+      background-image: none;
+      padding-top: 0;
+    }
 
     .choose__swiper {
       //max-width: 1920px;
       margin: 0 auto;
+      padding-bottom: 25px;
       //height: 767px;//
       //background: rgba(255, 255, 255, 0.90);
       //backdrop-filter: blur(2px);
       //border: 1px solid #266a58;
 
       .choose__swiper-wrapper {
-        margin: 0 auto;
-        //padding-left: 200px;
-        margin-left: -305px;
+        //margin: 0 auto;
+        //margin-left: -180px;
+        right: 10%!important;
+
+        @media #{$tablet} {
+          right: 0 !important;
+        }
 
         .choose__swiper-slide {
           //padding-left: 260px;
@@ -31,26 +41,52 @@
           width: 100%;
           //height: 767px;//
 
+          @media #{$tablet} {
+            display: flex;
+            flex-direction: column;
+          }
+
           .choose__swiper-slide-container {
             //max-width: 1428px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
+            width: 100%;
+
+            @media #{$tablet} {
+              display: flex;
+              flex-direction: column-reverse;
+            }
 
             .img-left {
+              width: 30%;
               display: inline-block;
-              margin-bottom: 100px;
+              margin-bottom: 55px;
               margin-right: 50px;
 
+              @media #{$laptop} {
+                display: none;
+              }
+
+              @media #{$tablet} {
+                display: flex;
+              }
+
               img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
               }
             }
 
             .content-box {
               //max-width: 974px;
               background: rgba(255, 255, 255, 0.9);
+              -webkit-backdrop-filter: blur(2px);
               backdrop-filter: blur(2px);
               padding: 55px 48px;
+              //max-width: 1400px; // для проверки
+              width: 70%;
 
               .title {
                 margin-bottom: 48px;
@@ -58,7 +94,8 @@
 
                 h2 {
                   color: #455a64;
-                  font-size: 50px;
+                  //font-size: 50px;
+                  font-size: clamp(32px, 2.6vw, 50px);
                   font-style: normal;
                   font-weight: 400;
                   line-height: 40px; /* 80% */
@@ -68,7 +105,8 @@
 
                 p {
                   color: #758b96;
-                  font-size: 30px;
+                  //font-size: 30px;
+                  font-size: clamp(21px, 1.56vw, 30px);
                   font-style: normal;
                   font-weight: 400;
                   line-height: 40px;
@@ -81,9 +119,20 @@
                 display: flex;
                 //max-width: 974px;
                 //border: 1px solid blue;
+                width: 100%;
 
                 .image {
                   margin-right: 50px;
+
+                  @media #{$laptop} {
+                    margin-right: 20px;
+                    width: 35%;
+
+                    img {
+                      width: 100%;
+                      object-fit: cover;
+                    }
+                  }
                 }
 
                 .text {
@@ -93,16 +142,22 @@
                   justify-content: flex-start;
                   margin-top: 20px;
 
+                  @media #{$laptop} {
+                    width: 65%;
+                  }
+
                   h3 {
                     color: #455a64;
-                    font-size: 25px;
+                    //font-size: 25px;
+                    font-size: clamp(16px, 1.30vw, 25px);
                     font-style: normal;
                     font-weight: 400;
                     line-height: 40px; /* 160% */
 
                     strong {
                       color: #df2c46;
-                      font-size: 40px;
+                      //font-size: 40px;
+                      font-size: clamp(25px, 2.08vw, 40px);
                       font-style: normal;
                       font-weight: 400;
                       line-height: 40px;
@@ -112,7 +167,8 @@
                   p {
                     color: #2c3e46;
                     font-family: $font-family-title;
-                    font-size: 18px;
+                    //font-size: 18px;
+                    font-size: clamp(14px, 0.93vw, 18px);
                     font-style: normal;
                     font-weight: 400;
                     line-height: 25px; /* 138.889% */
@@ -133,12 +189,24 @@
     .choose__navigation {
       position: absolute;
       top: 324px;
-      right: 120px;
+      right: 166px;
       width: 133px;
       height: 68px;
       border-radius: 48px;
       z-index: 50;
       box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.005);
+
+      @media #{$desktop} {
+        right: 150px;
+      }
+
+      @media #{$laptop} {
+        right: 95px;
+      }
+
+      @media #{$tablet} {
+        display: none;
+      }
 
       .swiper-button-next::after {
         display: none;
@@ -173,7 +241,18 @@
         content: '';
         width: 12px;
         height: 12px;
-        top: 27px;
+        top: 28px;
+        left: 31px;
+        background: url('../images/arr/arr_right_def.svg') no-repeat;
+      }
+
+      .choose__swiper-button-next:hover::after {
+        display: inline-flex;
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: 28px;
         left: 31px;
         background: url('../images/arr/arr_right_red.svg') no-repeat;
       }
@@ -215,6 +294,18 @@
         left: 20px;
         background: url('../images/arr/arr_left_def.svg') no-repeat;
       }
+
+      .choose__swiper-button-prev:hover::after {
+        display: inline-flex;
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: 28px;
+        left: 20px;
+        transform: rotate(180deg);
+        background: url('../images/arr/arr_right_red.svg') no-repeat;
+      }
     }
 
     .choose__pagination-box {
@@ -225,10 +316,11 @@
       padding-left: 10px;
       height: 25px;
       margin: 0 auto;
-      top: -10px;
+      top: 15px;
       right: 0;
       display: flex;
       justify-content: center;
+      align-items: center;
 
       @media #{$phone} {
         top: -45px;
@@ -274,7 +366,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        top: -10px;
+        top: -8px;
         right: -33px;
       }
 
@@ -287,36 +379,84 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        top: -10px;
+        top: -8px;
         left: -33px;
       }
     }
   }
 }
 .swiper-slide.choose__swiper-slide.swiper-slide-next.swiper-slide-visible {
-  border: 3px solid red;
-  opacity: 0.4 !important;
+  //border: 3px solid red;
+  opacity: 0.3 !important;
+
+
 
   .choose__swiper-slide-container {
     .img-left {
-      border: 1px solid rgb(18, 228, 112);
-      display: none !important;
+      //border: 1px solid rgb(18, 228, 112);
+      img {
+        opacity: 0;
+        //transition: opacity 0.1s ease-in;
+      }
     }
 
     .content-box {
-      border: 1px solid rgb(87, 7, 192);
+      //border: 1px solid rgb(87, 7, 192);
 
       .title {
-        display: none !important;
+        opacity: 0;
       }
 
       .description {
         .image {
-          width: 340px;
-          height: 520px;
+          @media #{$laptop} {
+            margin-right: 20px;
+            width: 35%;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
         }
         .text {
-          display: none !important;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.swiper-slide.choose__swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active {
+
+  .choose__swiper-slide-container {
+    .img-left {
+      //border: 1px solid rgb(18, 228, 112);
+      img {
+        opacity: 1;
+        transition: opacity 0.9s linear;
+      }
+    }
+
+    .content-box {
+      //border: 1px solid rgb(87, 7, 192);
+
+      .title {
+        opacity: 1;
+        transition: opacity 0.9s linear;
+      }
+
+      .description {
+        .image {
+
+
+          //width: 340px;
+          //height: 520px;
+        }
+        .text {
+          opacity: 1;
+          transition: opacity 0.9s linear;
         }
       }
     }

@@ -361,29 +361,30 @@
             }
 
             .content-box {
+              position: relative;
               padding-right: 10px;
               padding-left: 10px;
               margin: 0 auto;
-              margin-top: -440px;
+              //margin-top: -440px;
               color: #fff;
               display: flex;
               flex-direction: column;
               align-items: center;
 
               @media #{$notebook_s} {
-                margin-top: -264px;
+                //margin-top: -264px;
               }
 
               @media #{$tablet} {
-                margin-top: -140px;
+                //margin-top: -140px;
               }
 
               h3 {
                 margin: 0;
                 padding: 0;
                 color: #fff;
-                margin-top: -27px;
-                margin-bottom: -34px;
+                margin-top: 26px;
+                //margin-bottom: -34px;
                 text-align: center;
                 text-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
                 font-family: $font-family-base;
@@ -395,7 +396,7 @@
 
                 @media #{$notebook_s} {
                   font-size: 150px;
-                  margin-bottom: -20px;
+                  //margin-bottom: -20px;
                 }
 
                 @media #{$tablet} {
@@ -404,7 +405,7 @@
 
                 @media #{$tablet-mini} {
                   font-size: 94px;
-                  margin-bottom: -4px;
+                  //margin-bottom: -4px;
                 }
               }
 
@@ -465,6 +466,25 @@
                 @media #{$phone} {
                   padding: 0 44px;
                 }
+              }
+            }
+
+            .dt3::before {
+              //border: 1px solid #fff;
+              position: absolute;
+              content: attr(data-titleh);
+              color: rgba(255, 255, 255, 0.1);
+              text-align: center;
+              font-family: $font-family-base;
+              font-size: 420px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-transform: uppercase;
+
+              @media #{$notebook_s} {
+                font-size: 350px;
+                //margin-bottom: -20px;
               }
             }
           }

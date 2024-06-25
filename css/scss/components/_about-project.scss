@@ -29,12 +29,12 @@
       center/contain;
       margin-top: 0;
       padding: 0 10px 0;
+      margin-bottom: 71px;
     }
 
-    @media #{$phone} {
-      //margin-bottom: 71px;
-      margin-bottom: 1125px;
-    }
+    //@media #{$phone} {
+    //  margin-bottom: 71px;
+    //}
 
     .about-project__wrapper {
       display: flex;
@@ -54,6 +54,7 @@
         margin-left: 127px;
         margin-right: -300px;
         background: rgba(255, 255, 255, 0.8);
+        -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         padding: 51px 40px 41px 116px;
         //border: 1px solid brown;
@@ -176,7 +177,7 @@
         }
 
         p:last-of-type {
-          margin-bottom: 50px;
+          margin-bottom: 24px;
         }
 
         .about-project__btn {

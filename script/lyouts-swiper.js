@@ -4,10 +4,10 @@ var swiper = new Swiper(".mySwiper", {
     // centeredSlides: true,
     // centeredSlidesBounds: true,
     // centerInsufficientSlides: true,
-    touchAngle: 45,
+    // touchAngle: 15,
     grabCursor: true,
     shortSwipes: false,
-    centeredSlides: true,
+    // centeredSlides: true,
     slidesPerGroup: 1,
     // autoplay: {
     //     delay: 5000,
@@ -29,7 +29,8 @@ var swiper = new Swiper(".mySwiper", {
     },
     // loop: true,
 
-    freeMode: true,
+    // freeMode: true,
+    freeMode: false,
     watchSlidesProgress: true,
     navigation: {
         nextEl: ".mySwiper2__swiper-button-next",
@@ -38,9 +39,10 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 10,
+    spaceBetween: 0,
     slidesPerView: 1,
     grabCursor: true,
+    freeMode: false,
     // loop: true,
     // effect: "fade",
     navigation: {
