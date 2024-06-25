@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  margin-top: -204px;
+  margin-top: -226px;
   padding-top: 18px;
   background: rgba(12, 17, 19, 0.9);
 
@@ -51,7 +51,7 @@
       }
 
       .footer__nav {
-        margin-bottom: 77px;
+        margin-bottom: 100px;
 
         @media #{$tablet} {
           display: none;
@@ -182,6 +182,8 @@
       }
 
       .logo__dev {
+        position: relative;
+        top: -5px;
         align-self: center;
 
         @media #{$phone} {
