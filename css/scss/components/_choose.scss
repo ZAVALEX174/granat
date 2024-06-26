@@ -132,6 +132,7 @@
                     width: 65%;
                   }
 
+
                   h3 {
                     color: #455a64;
                     //font-size: 25px;
@@ -148,6 +149,10 @@
                       font-weight: 400;
                       line-height: 40px;
                     }
+
+                    @media #{$phone} {
+                      display: none;
+                    }
                   }
 
                   p {
@@ -163,6 +168,34 @@
 
                   p:last-of-type {
                     margin-bottom: 0;
+                  }
+                }
+
+
+              }
+
+              .text__mob {
+                display: none;
+
+                @media #{$phone} {
+                  display: block;
+                }
+
+                h3 {
+                  color: #455a64;
+                  //font-size: 25px;
+                  font-size: clamp(16px, 1.30vw, 25px);
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 40px; /* 160% */
+
+                  strong {
+                    color: #df2c46;
+                    //font-size: 40px;
+                    font-size: clamp(25px, 2.08vw, 40px);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 40px;
                   }
                 }
               }

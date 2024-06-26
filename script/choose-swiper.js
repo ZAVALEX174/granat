@@ -36,13 +36,15 @@ const chooseSlider = new Swiper('.choose__swiper', {
             320: {
                 slidesPerView: 1,
                 spaceBetween: 100,
-
+                freeMode: true,
+                effect: "creative",
+                // loopedSlides:2,
                 creativeEffect: {
                     limitProgress: 2,
                     prev: {
                         translate: ["-100vw", 0, 0],
-                        opacity: 0,
-                        scale: 0
+                        opacity: 0.7,
+                        scale: 1
                     },
                     next: {
                         translate: ["100%", 0, 0],
