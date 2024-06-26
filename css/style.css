@@ -1552,6 +1552,11 @@ main {
   font-weight: 400;
   line-height: 40px;
 }
+@media screen and (max-width: 500px) {
+  .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .description .text h3 {
+    display: none;
+  }
+}
 .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .description .text p {
   color: #2c3e46;
   font-family: "Gilroy", sans-serif;
@@ -1563,6 +1568,28 @@ main {
 }
 .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .description .text p:last-of-type {
   margin-bottom: 0;
+}
+.choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .text__mob {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .text__mob {
+    display: block;
+  }
+}
+.choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .text__mob h3 {
+  color: #455a64;
+  font-size: clamp(16px, 1.3vw, 25px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+}
+.choose .choose__container .choose__swiper .choose__swiper-wrapper .choose__swiper-slide .choose__swiper-slide-container .content-box .text__mob h3 strong {
+  color: #df2c46;
+  font-size: clamp(25px, 2.08vw, 40px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
 }
 .choose .choose__container .choose__navigation {
   position: absolute;
