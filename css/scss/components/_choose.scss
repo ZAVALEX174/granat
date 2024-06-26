@@ -59,8 +59,11 @@
               @media #{$tablet} {
                 display: flex;
                 width: 100%;
+<<<<<<< HEAD
                 margin-right: 0;
                 margin-left: 50px;
+=======
+>>>>>>> 696081a0911cb3da0b0b4562909d92a5e28e9cc0
               }
 
               @media #{$phone} {
@@ -131,10 +134,13 @@
                 display: flex;
                 width: 100%;
 
+<<<<<<< HEAD
                 @media #{$tablet} {
                   margin-left: -49px;
                 }
 
+=======
+>>>>>>> 696081a0911cb3da0b0b4562909d92a5e28e9cc0
                 @media #{$phone} {
                   margin-bottom: 26px;
                 }
