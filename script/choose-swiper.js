@@ -36,11 +36,7 @@ const chooseSlider = new Swiper('.choose__swiper', {
         breakpoints: {
             320: {
                 slidesPerView: 1,
-<<<<<<< HEAD
                 spaceBetween: 10,
-=======
-                spaceBetween: 100,
->>>>>>> 696081a0911cb3da0b0b4562909d92a5e28e9cc0
                 freeMode: true,
                 effect: "creative",
                 // loopedSlides:2,
