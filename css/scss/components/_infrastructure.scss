@@ -70,9 +70,9 @@
       //border: 1px solid blue;
       padding: 0 10px;
       //
-      //@media #{$phone} {
-      //  padding: 0;
-      //}
+      @media #{$phone} {
+        justify-content: center;
+      }
 
       li {
         //padding: 0 10px;
@@ -81,10 +81,23 @@
         margin-top: -30px;
         padding: 0 10px;
 
+        @media #{$desktop} {
+          width: calc(100%  / 4);
+        }
+
+        @media #{$laptop} {
+          width: calc(100%  / 3);
+        }
+
+        @media #{$laptop_s} {
+          width: calc(100%  / 2);
+        }
+
         @media #{$phone} {
           margin-top: 0;
           padding: 0;
           margin-bottom: 27px;
+          width: 100%;
         }
 
 

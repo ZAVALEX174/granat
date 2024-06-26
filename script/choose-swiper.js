@@ -2,6 +2,7 @@ const chooseSlider = new Swiper('.choose__swiper', {
         loop: true,
         speed: 1500,
         slidesPerView: 1.25,
+        // spaceBetween: 5,
         // autoHeight: true,
         centeredSlides: true,
         centeredSlidesBounds: true,
@@ -35,7 +36,7 @@ const chooseSlider = new Swiper('.choose__swiper', {
         breakpoints: {
             320: {
                 slidesPerView: 1,
-                spaceBetween: 100,
+                spaceBetween: 10,
                 freeMode: true,
                 effect: "creative",
                 // loopedSlides:2,

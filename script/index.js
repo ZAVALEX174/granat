@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-
         Fancybox.bind('[data-fancybox]', {
         // Your custom options
     });
@@ -13,5 +11,9 @@ $(document).ready(function () {
                 validator: "[0-6,9]"
             }
         }
+    });
+
+    $('.modal__btn-sub').click(function() {
+        Fancybox.close()
     });
 })

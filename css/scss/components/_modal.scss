@@ -10,12 +10,9 @@
   }
 }
 .fancybox__backdrop {
+  background: rgba(0, 0, 0, 0.65) !important;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-}
-
-.fancybox__backdrop {
-  background: rgba(0, 0, 0, 0.65) !important;
 }
 
 .is-close-btn {
@@ -34,10 +31,6 @@
 }
 
 .modal {
-  //width: 100%;
-  //height: 100%;
-  //background: #000;
-
   .modal__container {
     width: 100%;
     height: 100%;
@@ -53,6 +46,10 @@
       background-color: rgba(5, 8, 14, 0.6);
       -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px);
+
+      @media #{$phone} {
+        padding: 27px 5px 66px 5px;
+      }
 
       form {
         position: relative;
@@ -102,6 +99,10 @@
           border-radius: 23.5px;
           border: 1px solid rgba(65, 68, 79, 0.2);
           background: rgba(27, 29, 32, 0.6);
+
+          @media #{$tablet} {
+            width: auto;
+          }
         }
 
         input:last-of-type {
@@ -123,6 +124,10 @@
           flex-direction: column;
           max-width: 440px;
 
+          @media #{$phone} {
+            align-items: center;
+          }
+
           .link-warning {
             color: #363d41;
             font-family: $font-family-title;
@@ -140,6 +145,10 @@
             align-items: center;
             justify-content: center;
             margin-right: 14px;
+
+            @media #{$phone} {
+              margin-right: 0;
+            }
           }
         }
       }
@@ -157,6 +166,11 @@
         z-index: 70;
         transform: scale(-1, 1);
         pointer-events: none;
+
+        @media #{$phone} {
+          width: 100%;
+          right: 0;
+        }
       }
     }
   }
@@ -170,21 +184,15 @@
   .modal__container {
     //border: 1px solid #fff; // после верстки удалить
     max-width: 764px;
-    // width: 100%;
     height: 404px;
 
     .modal__text {
       padding: 110px 0 188px 0;
       text-align: center;
-      // width: 764px;
-      // height: 404px;
-      // flex-shrink: 0;
-      // max-width: 700px;
-      // height: 300px;
       width: 100%;
       height: 100%;
       border-radius: 34px;
-       background: rgba(5, 8, 14, 0.6);
+      background: rgba(5, 8, 14, 0.6);
       //background-color: #fff;
       -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px);
@@ -213,7 +221,7 @@
       p:last-of-type {
         color: #9ba4a8;
         text-align: center;
-        font-family: Gilroy;
+        font-family: $font-family-title;
         font-size: 16px;
         font-style: normal;
         font-weight: 300;
@@ -223,36 +231,14 @@
   }
 }
 
-// .modal-image {
-//   max-width: 500px;
-//   height: auto;
+.modal2.fancybox__content {
+  .f-button.is-close-btn {
+    top: 15px !important;
+    right: 15px !important;
+    background: url('../images/fansy/close02.svg') no-repeat center/contain !important;
+  }
 
-//   .modal__container_image {
-//     width: 100%;
-//     height: 100%;
-
-//     .licenses__gallery_item{
-//       position: relative;
-
-//       p {
-//         color: #fff;
-//       }
-
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//       }
-//     }
-
-//     .licenses__gallery_item::before {
-//       position: absolute;
-//       content: '';
-//       top: 0;
-//       left: 0;
-//       right: 0;
-//       bottom: 0;
-//       opacity: 0.5;
-//     }
-//   }
-// }
+  .f-button.is-close-btn:hover {
+    background: url('../images/fansy/close03.svg') no-repeat center/contain !important;
+  }
+}
