@@ -1,14 +1,10 @@
 .choose {
+
   .choose__container {
-    //max-width: 1920px;
-    //margin: 0 auto;
-    //background: url('../images/project/02.png') no-repeat top
-    //left/50% 453px;
     background-image: url('../images/project/0201.png');
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 50% auto;
-    //border: 1px solid orange;
     padding-top: 145px;
     margin-bottom: 108px;
 
@@ -18,28 +14,20 @@
     }
 
     .choose__swiper {
-      //max-width: 1920px;
       margin: 0 auto;
       padding-bottom: 25px;
-      //height: 767px;//
-      //background: rgba(255, 255, 255, 0.90);
-      //backdrop-filter: blur(2px);
-      //border: 1px solid #266a58;
 
       .choose__swiper-wrapper {
-        //margin: 0 auto;
-        //margin-left: -180px;
         right: 10%!important;
 
         @media #{$tablet} {
           right: 0 !important;
+          width: 100%;
         }
 
+
         .choose__swiper-slide {
-          //padding-left: 260px;
-          //max-width: 974px;
           width: 100%;
-          //height: 767px;//
 
           @media #{$tablet} {
             display: flex;
@@ -47,7 +35,6 @@
           }
 
           .choose__swiper-slide-container {
-            //max-width: 1428px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -56,6 +43,7 @@
             @media #{$tablet} {
               display: flex;
               flex-direction: column-reverse;
+              align-items: center;
             }
 
             .img-left {
@@ -70,6 +58,7 @@
 
               @media #{$tablet} {
                 display: flex;
+                width: 100%;
               }
 
               img {
@@ -80,21 +69,21 @@
             }
 
             .content-box {
-              //max-width: 974px;
               background: rgba(255, 255, 255, 0.9);
               -webkit-backdrop-filter: blur(2px);
               backdrop-filter: blur(2px);
               padding: 55px 48px;
-              //max-width: 1400px; // для проверки
               width: 70%;
+
+              @media #{$tablet} {
+                width: 100%;
+              }
 
               .title {
                 margin-bottom: 48px;
-                //max-width: 690px;
 
                 h2 {
                   color: #455a64;
-                  //font-size: 50px;
                   font-size: clamp(32px, 2.6vw, 50px);
                   font-style: normal;
                   font-weight: 400;
@@ -105,7 +94,6 @@
 
                 p {
                   color: #758b96;
-                  //font-size: 30px;
                   font-size: clamp(21px, 1.56vw, 30px);
                   font-style: normal;
                   font-weight: 400;
@@ -117,8 +105,6 @@
               .description {
                 position: relative;
                 display: flex;
-                //max-width: 974px;
-                //border: 1px solid blue;
                 width: 100%;
 
                 .image {
@@ -214,7 +200,6 @@
 
       .choose__swiper-button-next {
         background: transparent;
-        //border: 1px solid grey;
         position: absolute;
         height: 68px;
         width: 67px;
@@ -450,10 +435,8 @@
       .description {
         .image {
 
-
-          //width: 340px;
-          //height: 520px;
         }
+
         .text {
           opacity: 1;
           transition: opacity 0.9s linear;
